@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Александра Егорова](https://up.htmlacademy.ru/adaptive/24/user/1900265).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
