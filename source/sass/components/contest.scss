@@ -1,0 +1,54 @@
+.contest__title {
+  background-color: #000000;
+  color: #FFFFFF;
+  align-items: center;
+  text-align: center;
+}
+
+.contest__text {
+  background-color: #FFFFFF;
+  color: #283645;
+  align-items: center;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  color: #D22856;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+}
+
+.user__data::placeholder {
+  align-items: center;
+  color: #283645;
+}
+
+input[type="text"] {
+  align-items: center;
+  color: #283645;
+}
+
+.control-label {
+  align-items: center;
+  color: #283645;
+}
+
+.contest__form--button-submit {
+  display: block;
+  background: #2AAB6D;
+  color: #FFFFFF;
+  border: 2px solid #2AAB6D;
+  border-radius: 1px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.contest__form--legend {
+  align-items: center;
+  text-transform: uppercase;
+}

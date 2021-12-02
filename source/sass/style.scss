@@ -1,1 +1,23 @@
 // Начните писать стили здесь
+@import "./global/global";
+
+// components
+@import "./components/page-header";
+@import "./components/main-nav.scss";
+@import "./components/page-main.scss";
+@import "./components/intro-platforms.scss";
+@import "./components/advantages.scss";
+@import "./components/reviews.scss";
+@import "./components/rate.scss";
+@import "./components/contacts.scss";
+@import "./components/page-footer.scss";
+@import "./components/contest.scss";
+@import "./components/user-data.scss";
+@import "./components/progress.scss";
+@import "./components/user-contacts.scss";
+@import "./components/emotions.scss";
+@import "./components/modal-failure.scss";
+@import "./components/modal-success.scss";
+@import "./components/catalog.scss";
+@import "./components/card.scss";
+@import "./components/upload.scss";

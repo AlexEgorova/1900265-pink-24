@@ -1,0 +1,24 @@
+.upload {
+  background-color: #F2F2F2;
+}
+
+.upload__text {
+  align-items: center;
+  text-align: center;
+  color: #283645;
+}
+
+.upload__button--submit {
+  color: #D22856;
+  border: 3px solid #D22856;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+.upload__button--reset {
+  color: #283645;
+  opacity: 0.1;
+  border: 3px solid #283645;
+  box-sizing: border-box;
+  border-radius: 30px;
+}

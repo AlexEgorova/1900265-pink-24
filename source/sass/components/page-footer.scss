@@ -1,0 +1,27 @@
+.page-footer {
+  align-items: center;
+  text-align: center;
+}
+
+.logo-pink__link--word svg {
+  &:hover {
+    fill: #D22856;
+  }
+}
+
+.social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social__link {
+  display: block;
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}

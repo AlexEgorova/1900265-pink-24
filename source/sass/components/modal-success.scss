@@ -1,0 +1,27 @@
+.modal-success {
+  background-color: #FFFFFF;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+}
+
+.modal-success__content--title {
+  color: #000000;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-success__content--text {
+  color: #283645;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-success__content--button {
+  display: block;
+  background: #2AAB6D;
+  color: #FFFFFF;
+  border: 2px solid #2AAB6D;
+  border-radius: 1px;
+  align-items: center;
+  text-transform: uppercase;
+}
