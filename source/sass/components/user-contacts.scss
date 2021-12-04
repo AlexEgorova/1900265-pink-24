@@ -1,6 +1,6 @@
 .user-contacts {
   label {
-    font-family: "Open Sans";
+    font-family: $open-sans;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -17,7 +17,7 @@
 
   input[type="number"],
   input[type="email"] {
-    font-family: "Open Sans";
+    font-family: $open-sans;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

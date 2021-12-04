@@ -6,7 +6,7 @@
 
 .intro-platforms__button {
   color: $text-wh;
-  font-family: Open Sans;
+  font-family: $open-sans;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -28,7 +28,7 @@
 }
 
 .intro-platforms__legend {
-  font-family: "Open Sans";
+  font-family: $open-sans;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;

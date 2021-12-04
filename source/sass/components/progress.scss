@@ -1,5 +1,5 @@
 .progress__title {
-  font-family: "Open Sans";
+  font-family: $open-sans;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -11,7 +11,7 @@
 }
 
 .progress__list {
-  font-family: "Open Sans";
+  font-family: $open-sans;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
