@@ -11,6 +11,35 @@
   color: $text-wh;
 }
 
-td {
+.rate__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.rate__price {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.rate__table--body {
   border: 2px solid #e5e5e5;
+  background-color: $bg-wh;
+}
+
+.rate__option {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
 }

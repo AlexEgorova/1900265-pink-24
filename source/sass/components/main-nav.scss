@@ -9,12 +9,16 @@
   border: none;
 }
 
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
 .main-nav__item {
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .main-nav__link {
-  font-family: $open-sans;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -22,4 +26,24 @@
   align-items: center;
   text-transform: uppercase;
   color: $text-wh;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    background-color: transparent;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    border: none;
+  }
+
+  .main-nav__item {
+    display: inline-block;
+    margin-right: 78px;
+  }
 }

@@ -28,10 +28,13 @@
 
 .modal__button {
   display: block;
-  background: #2aab6d;
+  background: $btn-gr;
   color: $text-wh;
   border: 2px solid #2aab6d;
   border-radius: 1px;
   align-items: center;
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
 }

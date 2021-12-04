@@ -2,12 +2,16 @@
   background-color: $bg-blue-dark;
   color: $text-wh;
   text-align: center;
+  padding-top: 20px;
+}
+
+.intro-platforms__wrapper {
+  height: 271px;
 }
 
 .intro-platforms__button {
+  display: inline-block;
   color: $text-wh;
-  font-family: $open-sans;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -15,6 +19,7 @@
   box-sizing: border-box;
   border-radius: 29px;
   padding: 21px 39px;
+  margin-bottom: 32px;
 }
 
 .intro-platforms__list {
