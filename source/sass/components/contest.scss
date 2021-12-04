@@ -1,41 +1,17 @@
-.contest__title {
-  background-color: #000000;
-  color: #ffffff;
-  align-items: center;
-  text-align: center;
-}
-
 .contest__text {
-  background-color: #ffffff;
-  color: #283645;
+  background-color: $bg-wh;
+  color: $text-dark;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
   align-items: center;
   text-align: center;
 }
 
-fieldset {
+.contest__form fieldset {
   border: none;
-}
-
-legend {
-  color: #d22856;
-  text-transform: uppercase;
-  align-items: center;
-  text-align: center;
-}
-
-.user__data::placeholder {
-  align-items: center;
-  color: #283645;
-}
-
-input[type="text"] {
-  align-items: center;
-  color: #283645;
-}
-
-.control-label {
-  align-items: center;
-  color: #283645;
 }
 
 .contest__form--button-submit {

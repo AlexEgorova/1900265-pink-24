@@ -1,12 +1,24 @@
+//цветовые переменные
+$bg-bl: #000000;
+$bg-blue-dark: #1d2631;
+$bg-dark: #283645;
+$bg-light: #f2f2f2;
+$bg-wh: #ffffff;
+$text-wh: #ffffff;
+$text-bl: #000000;
+$text-dark: #283645;
+$text-pink: #d22856;
+$btn-gr: rgba(42, 171, 109, 1);
+
 body {
   margin: 0;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $bg-wh;
+  color: $text-bl;
+  font-family: "Open Sans", sans-serif;
 }
 
 img {
   max-width: 100%;
-  object-fit: cover;
 }
 
 a {
@@ -15,17 +27,4 @@ a {
 
 ul {
   list-style: none;
-}
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
 }

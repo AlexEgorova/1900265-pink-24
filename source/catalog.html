@@ -6,44 +6,49 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class=page__body>
+    <h1 class="visually-hidden">Каталог фотографий и редактор</h1>
     <header class=page-header>
-      <a class="page-header__logo">
-        <img class="img page-header__logo-word" src="./img/logo-word-white.svg" width="74" height="23" alt="Пинк.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <svg width="50" height="24" viewBox="0 0 50 24" role="img" aria-label="Открыть меню." xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.14 0C.99 0 .84.02.7.07S.43.2.33.3A.88.88 0 0 0 0 1v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 3V1a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 11v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 13v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 21v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 23v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Z" fill="#fff"/>
-          </svg>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link " href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="img page-header__logo-word" src="./img/logo-word-white.svg" width="74" height="23" alt="Пинк.">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <svg width="50" height="24" viewBox="0 0 50 24" role="img" aria-label="Открыть меню." xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.14 0C.99 0 .84.02.7.07S.43.2.33.3A.88.88 0 0 0 0 1v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 3V1a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 11v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 13v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 21v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 23v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Z" fill="#fff"/>
+            </svg>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link " href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--current" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="page-header__title">
+        <h2 class="page-header__title page-header__title--main">Фотографии пользователей</h2>
+      </div>
     </header>
-    <main class="page-maim">
-      <h1 class="visually-hidden">Каталог фотографий</h1>
+    <main class="page-main">
       <section class="catalog">
         <div class="catalog__wrapper">
-          <h2 class="catalog__title"> Фотографии пользователей</h2>
+          <h2 class="visually-hidden">Фотографии</h2>
           <p class="catalog__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
           <ul class="catalog__list">
             <li class="catalog__item card">
-              <img class="card__photo" src="./img/panorama-tablet.jpg" width="320" height="137" alt="panorama">
+              <img class="card__photo" src="./img/panorama-tablet.jpg" width="320" height="137" alt="Панорама леса с моста">
               <span class="card__legend">ПАНОРАМА ДНЯ</span>
               <p class="card__user-name">Анна</p>
               <span class="card__period">(5 минут назад)</span>
@@ -52,7 +57,7 @@
               <span class="card__like">Нравится: 215</span>
             </li>
             <li class="catalog__item card">
-              <img class="card__photo" src="./img/photo-1-mobile.jpg" width="280" height="180" alt="photo-1-mobile">
+              <img class="card__photo" src="./img/photo-1-mobile.jpg" width="280" height="180" alt="Белый автомобиль">
               <p class="card__user-name">Левон</p>
               <span class="card__period">(5 часов назад)</span>
               <p class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -60,7 +65,7 @@
               <span class="card__like">Нравится: 356</span>
             </li>
             <li class="catalog__item card">
-              <img class="card__photo" src="./img/photo-2-mobile.jpg" width="280" height="180" alt="photo-2-mobile">
+              <img class="card__photo" src="./img/photo-2-mobile.jpg" width="280" height="180" alt="Барабанная установка">
               <p class="card__user-name">Антон</p>
               <span class="card__period">(12 часов назад)</span>
               <p class="card__text">Соседи будут рады!</p>
@@ -68,7 +73,7 @@
               <span class="card__like">Нравится: 666</span>
             </li>
             <li class="catalog__item card">
-              <img class="card__photo" src="./img/photo-3-tablet.jpg" width="280" height="180" alt="photo-3-tablet">
+              <img class="card__photo" src="./img/photo-3-tablet.jpg" width="280" height="180" alt="Небо и небоскреб сквозь атриум">
               <p class="card__user-name">Борис</p>
               <span class="card__period">(20 часов назад)</span>
               <p class="card__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -76,7 +81,7 @@
               <span class="card__like">Нравится: 215</span>
             </li>
             <li class="catalog__item card">
-              <img class="card__photo" src="./img/photo-4-tablet.jpg" width="280" height="180" alt="photo-4-tablet">
+              <img class="card__photo" src="./img/photo-4-tablet.jpg" width="280" height="180" alt="Сельхоз ярмарка">
               <p class="card__user-name">Сергей</p>
               <span class="card__period">(25 часов назад)</span>
               <p class="card__text">Самая кубанская в мире!</p>
@@ -84,7 +89,7 @@
               <span class="card__like">Нравится: 4</span>
             </li>
             <li class="catalog__item card">
-              <img class="card__photo" src="./img/photo-5-tablet.jpg" width="280" height="180" alt="photo-5-tablet">
+              <img class="card__photo" src="./img/photo-5-tablet.jpg" width="280" height="180" alt="Автор сидит на уступе скалы">
               <p class="card__user-name">Максим</p>
               <span class="card__period">(40 часов назад)</span>
               <p class="card__text">Где снег-то?</p>
@@ -92,7 +97,7 @@
               <span class="card__like">Нравится: 150</span>
             </li>
             <li class="catalog__item card">
-              <img class="card__photo" src="./img/photo-6-tablet.jpg" width="280" height="180" alt="photo-6-tablet">
+              <img class="card__photo" src="./img/photo-6-tablet.jpg" width="280" height="180" alt="Крыло самолета с лучами солнца">
               <p class="card__user-name">Надежда</p>
               <span class="card__period">(45 часов назад)</span>
               <p class="card__text">Всем GM и взаимные лайки!</p>
@@ -106,7 +111,7 @@
         <h2 class="visually-hidden">Загрузить свою фотографию</h2>
         <p class="upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <div class="upload__wrapper">
-          <img class="upload__photo" src="./img/photo-7-tablet.jpg" width="280" height="374" alt="photo-7-tablet">
+          <img class="upload__photo" src="./img/photo-7-tablet.jpg" width="280" height="374" alt="Зимняя дорога с закатом">
           <div class="upload__edition edition">
             <button class="edition__button edition__button--crop" type="button">Обрезка</button>
             <button class="edition__button edition__button--fill" type="button">Заливка</button>

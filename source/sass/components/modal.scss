@@ -1,0 +1,37 @@
+.modal {
+  background-color: $bg-wh;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+}
+
+.modal__title {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: $text-bl;
+  align-items: center;
+  text-align: center;
+}
+
+.modal__text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text-dark;
+  align-items: center;
+  text-align: center;
+}
+
+.modal__button {
+  display: block;
+  background: #2aab6d;
+  color: $text-wh;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+  align-items: center;
+  text-transform: uppercase;
+}

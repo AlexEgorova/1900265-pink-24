@@ -1,16 +1,16 @@
 .intro-platforms {
-  background-color: #1d2631;
-  color: #ffffff;
-}
-
-.intro-platforms__title {
-  align-items: center;
+  background-color: $bg-blue-dark;
+  color: $text-wh;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .intro-platforms__button {
-  color: #ffffff;
+  color: $text-wh;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
   border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 29px;
@@ -19,4 +19,18 @@
 
 .intro-platforms__list {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-platforms__link {
+  margin-right: 35px;
+}
+
+.intro-platforms__legend {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
 }

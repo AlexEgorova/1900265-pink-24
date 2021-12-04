@@ -1,14 +1,39 @@
+.reviews {
+  background-color: $bg-wh;
+}
+
 .reviews__item {
   align-items: center;
   text-align: center;
 }
 
 .reviews__author-name {
+  font-family: "Open Sans";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  color: $text-bl;
+}
+
+.reviews__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  color: $text-dark;
 }
 
 .reviews__toggles {
   align-items: center;
   text-align: center;
+}
+
+.slider__toggles {
+  border: none;
 }

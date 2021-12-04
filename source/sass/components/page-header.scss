@@ -1,7 +1,22 @@
 .page-header {
+  background-color: $bg-bl;
+  opacity: 0.3;
+  background-image: url('/source/img/back-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $text-wh;
+}
+
+.page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 1);
-  opacity: 0.3;
-  color: #ffffff;
+}
+
+.page-header__title--main {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  align-items: center;
+  text-align: center;
 }

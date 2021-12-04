@@ -6,54 +6,59 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class=page__body>
+    <h1 class="visually-hidden">Форма для участия в конкурсе</h1>
     <header class=page-header>
-      <a class="page-header__logo">
-        <img class="img page-header__logo-word" src="./img/logo-word-white.svg" width="74" height="23" alt="Пинк.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <svg width="50" height="24" viewBox="0 0 50 24" role="img" aria-label="Открыть меню." xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.14 0C.99 0 .84.02.7.07S.43.2.33.3A.88.88 0 0 0 0 1v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 3V1a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 11v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 13v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 21v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 23v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Z" fill="#fff"/>
-          </svg>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="img page-header__logo-word" src="./img/logo-word-white.svg" width="74" height="23" alt="Пинк.">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <svg width="50" height="24" viewBox="0 0 50 24" role="img" aria-label="Открыть меню." xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.14 0C.99 0 .84.02.7.07S.43.2.33.3A.88.88 0 0 0 0 1v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 3V1a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 11v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 13v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 21v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 23v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Z" fill="#fff"/>
+            </svg>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--current" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="page-header__title">
+        <h2 class="page-header__title page-header__title--main">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      </div>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Форма для участия в конкурсе</h1>
       <section class="contest">
         <div class="contest__wrapper">
-          <h2 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+          <h2  class="visually-hidden">Заполнение формы</h2>
           <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
           <form class="contest__form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="contest__group user-data">
               <legend class="visually-hidden">Данные пользователя</legend>
               <div class="user-data">
-                <label for="surname">ФАМИЛИЯ:</label>
+                <label for="surname">Фамилия:</label>
                 <input type="text" id="surname" placeholder="Укажите фамилию *" required>
               </div>
               <div class="user-data">
-                <label for="name">ИМЯ:</label>
+                <label for="name">Имя:</label>
                 <input type="text" id="name" placeholder="Введите ваше имя *" required>
               </div>
               <div class="user-data">
-                <label for="patronymic">ОТЧЕСТВО:</label>
+                <label for="patronymic">Отчество:</label>
                 <input  type="text" id="patronymic" placeholder="Ну и отчество тоже">
               </div>
             </fieldset>
@@ -201,20 +206,16 @@
       </div>
     </footer>
     <!-- modal-failure -->
-    <div class="modal-failure">
-      <section class="modal-failure__content">
-        <h3 class="modal-failure__content modal-failure__content--title">Что-то пошло не так!</h3>
-        <p class="modal-failure__content modal-failure__content--text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal-failure__content modal-failure__content--button" type="button">ОК</button>
+      <section class="modal modal-failure">
+        <h3 class="modal__title">Что-то пошло не так!</h3>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button" type="button">ОК</button>
       </section>
-    </div>
     <!-- modal-success -->
-    <div class="modal-success">
-      <section class="modal-success__content">
-        <h3 class="modal-success__content modal-success__content--title">Ваша заявка отправлена</h3>
-        <p class="modal-success__content modal-success__content--text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-        <button class="modal-success__content modal-success__content--button" type="button">ЗАКРЫТЬ ОКНО</button>
+      <section class="modal modal-success">
+        <h3 class="modal__title">Ваша заявка отправлена</h3>
+        <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <button class="modal__button" type="button">ЗАКРЫТЬ ОКНО</button>
       </section>
-    </div>
   </body>
 </html>
