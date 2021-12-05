@@ -1,14 +1,14 @@
 .rate {
-  background-color: $bg-light;
+  background-color: $light;
   align-items: center;
 }
 
 .rate__table--head {
   text-align: center;
-  background: $bg-dark;
+  background: $dark;
   border: 2px solid #283645;
   border-radius: 1px 0 0 0;
-  color: $text-wh;
+  color: $white;
 }
 
 .rate__name {
@@ -31,7 +31,7 @@
 
 .rate__table--body {
   border: 2px solid #e5e5e5;
-  background-color: $bg-wh;
+  background-color: $white;
 }
 
 .rate__option {

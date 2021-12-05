@@ -1,8 +1,8 @@
 .card__legend {
-  background-color: #d22856;
+  background-color: $pink;
   align-items: center;
   text-align: center;
-  color: $text-wh;
+  color: $white;
 }
 
 .card__user-name {
@@ -10,7 +10,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  color: $text-dark;
+  color: $dark;
 }
 
 .card__period {
@@ -19,7 +19,7 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 24px;
-  color: $text-dark;
+  color: $dark;
 }
 
 .card__text {
@@ -27,12 +27,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: $text-dark;
+  color: $dark;
 }
 
 .card__like {
   align-items: center;
   text-align: right;
   text-transform: uppercase;
-  color: $text-pink;
+  color: $pink;
 }

@@ -1,5 +1,5 @@
 .reviews {
-  background-color: $bg-wh;
+  background-color: $bg-page;
 }
 
 .reviews__item {
@@ -8,25 +8,21 @@
 }
 
 .reviews__author-name {
-  font-family: $open-sans;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   align-items: center;
   text-align: center;
-  color: $text-bl;
+  color: $black;
 }
 
 .reviews__text {
-  font-family: $open-sans;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   align-items: center;
   text-align: center;
-  color: $text-dark;
+  color: $dark;
 }
 
 .reviews__toggles {

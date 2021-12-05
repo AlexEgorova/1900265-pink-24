@@ -1,11 +1,9 @@
 .user-contacts {
   label {
-    font-family: $open-sans;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
-    color: $text-pink;
+    color: $pink;
     text-transform: uppercase;
     align-items: center;
   }
@@ -13,16 +11,5 @@
   input {
     border: 2px solid #e5e5e5;
     border-radius: 1px;
-  }
-
-  input[type="number"],
-  input[type="email"] {
-    font-family: $open-sans;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    align-items: center;
-    color: $text-dark;
   }
 }

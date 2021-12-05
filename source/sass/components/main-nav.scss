@@ -1,5 +1,5 @@
 .main-nav {
-  background-color: $bg-dark;
+  background-color: $dark;
   text-align: center;
   align-items: center;
 }
@@ -19,13 +19,12 @@
 }
 
 .main-nav__link {
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
   align-items: center;
   text-transform: uppercase;
-  color: $text-wh;
+  color: $white;
 }
 
 @media (min-width: $desktop-width) {

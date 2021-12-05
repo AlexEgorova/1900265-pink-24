@@ -1,18 +1,16 @@
 .contacts {
-  background-color: $bg-wh;
+  background-color: $white;
   align-items: center;
   text-align: center;
 }
 
 .contacts__title {
-  font-family: $open-sans;
-  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   align-items: center;
   text-align: center;
-  color: $text-dark;
+  color: $dark;
 }
 
 .contacts__title--item {
@@ -22,12 +20,10 @@
 }
 
 .contacts__text {
-  font-family: $open-sans;
-  font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   align-items: center;
   text-align: center;
-  color: $text-pink;
+  color: $pink;
 }

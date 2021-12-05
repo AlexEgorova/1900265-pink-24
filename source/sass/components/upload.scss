@@ -1,5 +1,5 @@
 .upload {
-  background-color: $bg-light;
+  background-color: $light;
 }
 
 .upload__wrapper {
@@ -13,18 +13,18 @@
   line-height: 30px;
   align-items: center;
   text-align: center;
-  color: $text-dark;
+  color: $dark;
 }
 
 .upload__button--submit {
-  color: #d22856;
+  color: $pink;
   border: 3px solid #d22856;
   box-sizing: border-box;
   border-radius: 30px;
 }
 
 .upload__button--reset {
-  color: #283645;
+  color: $blue-dark;
   opacity: 0.1;
   border: 3px solid #283645;
   box-sizing: border-box;

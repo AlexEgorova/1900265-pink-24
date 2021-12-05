@@ -1,26 +1,14 @@
 .emotions__title {
-  font-family: $open-sans;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: $text-pink;
+  color: $pink;
 }
 
 .emotions input {
-  border: 2px solid #e5e5e5;
+  border: 2px solid $grey;
   border-radius: 1px;
-}
-
-input[type="text"] {
-  font-family: $open-sans;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  align-items: center;
-  color: $text-dark;
 }

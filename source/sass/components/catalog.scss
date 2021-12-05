@@ -1,8 +1,6 @@
 .catalog {
-  background-color: $bg-wh;
-  color: $text-dark;
-  font-family: $open-sans;
-  font-style: normal;
+  background-color: $bg-page;
+  color: $dark;
 }
 
 .catalog__title {
@@ -11,8 +9,8 @@
   line-height: 33px;
   align-items: center;
   text-align: center;
-  color: $text-wh;
-  background-color: $bg-bl;
+  color: $white;
+  background-color: $black;
 }
 
 .catalog__text {

@@ -1,21 +1,17 @@
 .progress__title {
-  font-family: $open-sans;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: $text-pink;
+  color: $pink;
   text-transform: uppercase;
   align-items: center;
   text-align: center;
 }
 
 .progress__list {
-  font-family: $open-sans;
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   align-items: center;
-  color: $text-dark;
+  color: $dark;
 }

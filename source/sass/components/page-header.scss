@@ -1,19 +1,8 @@
 .page-header {
-  height: 462px;
-  background-color: $bg-bl;
-  opacity: 0.3;
-  background-image: url("/source/img/back-mobile.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: $text-wh;
-
-  @media (min-width: $tablet-width) {
-    height: 729px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 853px;
-  }
+  min-height: 733px;
+  color: $white;
+  // background-image: url(../../img/back-mobile.jpg);
+  // background-repeat: no-repeat;
 }
 
 .page-header__wrapper {
@@ -21,37 +10,39 @@
   justify-content: space-between;
   height: 66px;
   padding: 20px;
+  background-color: $blue-dark;
+  opacity: 0.3;
+  background-image: url(../../img/back-mobile.jpg);
+  background-repeat: no-repeat;
 
-  @media (min-width: $tablet-width) {
-    height: 110px;
+}
+
+.page-header__logo-word {
+  height: 23px;
+}
+
+//tablet
+@media (min-width: $tablet-width) {
+  .page-header {
+    height: 729px;
   }
 
-  @media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    height: 110px;
+  }
+}
+
+//desktop
+@media (min-width: $desktop-width) {
+  .page-header {
+    height: 853px;
+  }
+
+  .page-header__wrapper {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 1200px;
     height: 110px;
   }
-}
-
-.page-header__logo-word {
-  height: 23px;
-
-  @media (min-width: $tablet-width) {
-    height: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 40px;
-  }
-}
-
-.page-header__title--main {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 33px;
-  align-items: center;
-  text-align: center;
 }

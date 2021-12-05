@@ -1,7 +1,6 @@
 .page__body {
   min-height: 100%;
-  margin: 0;
-  font-family: $open-sans, sans-serif;
-  background: $bg-wh;
-  color: $text-bl;
+  background-color: $bg-page;
+  color: $color-page;
+  font-family: $base-font, sans-serif;
 }
