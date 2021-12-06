@@ -5,41 +5,44 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class=page__body>
+  <body class="page__body">
     <h1 class="visually-hidden">Приложение "Пинк"</h1>
-    <header class=page-header>
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img class="img page-header__logo-word" src="./img/logo-word-white.svg" width="74" height="23" alt="Пинк.">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <svg width="50" height="24" viewBox="0 0 50 24" role="img" aria-label="Открыть меню." xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.14 0C.99 0 .84.02.7.07S.43.2.33.3A.88.88 0 0 0 0 1v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 3V1a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 11v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 13v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 21v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 23v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Z"/>
-            </svg>
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">HTML Academy</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <header class="page-header header-main">
+      <div class="page-header__wrapper page-header__wrapper--main">
+        <div class="page-header__nav">
+          <a class="page-header__logo">
+            <img class="img page-header__logo-word" src="./img/logo-word-white.svg" width="74" height="23" alt="Пинк.">
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+              <svg width="50" height="24" viewBox="0 0 50 24" role="img" aria-label="Открыть меню." xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.14 0C.99 0 .84.02.7.07S.43.2.33.3A.88.88 0 0 0 0 1v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 3V1a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 11v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 13v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 21v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 23v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Z"/>
+              </svg>
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="catalog.html">Фотографии</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">HTML Academy</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <h2 class="page-header__title page-header__title--main">Взгляните на жизнь иначе!</h2>
       </div>
       <section class="intro-platforms">
+        <h2 class="visually-hidden">Скачать приложение Пинк</h2>
         <div class="intro-platforms__wrapper">
-          <h2 class="intro-platforms__title">Взгляните на жизнь иначе!</h2>
           <a class="intro-platforms__button intro-platforms__button--download" href="#">Скачать приложение</a>
           <ul class="intro-platforms__list">
             <li class="intro-platforms__item">
@@ -78,7 +81,6 @@
           </p>
         </div>
       </section>
-
     </header>
     <main class="page-main">
       <section class="advantages">
@@ -121,15 +123,18 @@
       <section class="rate">
         <div class="rate__wrapper slider">
           <h2 class="visually-hidden">Тарифы</h2>
-          <table class="rate__table rate__table--standart slider__list">
-            <tr class="rate__table rate__table--head">
-              <td>
+          <table class="rate__table slider__list">
+            <tr class="rate__head">
+              <td class="rate__base"></td>
+              <td class="rate__standart">
                 <p class="rate__name">Стандарт</p>
                 <p class="rate__price">3,99 USD</p>
               </td>
+              <td class="rate__unlim"></td>
             </tr>
-            <tbody class="rate__table rate__table--body">
+            <tbody class="rate__body">
               <tr>
+                <td class="rate__base"></td>
                 <td class="rate__option">
                   <p>Розовый фильтр</p>
                   <span class="rate__noun">
@@ -138,8 +143,10 @@
                     </svg>
                   </span>
                 </td>
+                <td class="rate__unlim"></td>
               </tr>
               <tr>
+                <td class="rate__base"></td>
                 <td class="rate__option">
                   <p>Смайлики</p>
                   <span class="rate__noun">
@@ -148,8 +155,10 @@
                     </svg>
                   </span>
                 </td>
+                <td class="rate__unlim"></td>
               </tr>
               <tr>
+                <td class="rate__base"></td>
                 <td class="rate__option">
                   <p>Комментарии</p>
                   <span class="rate__noun">
@@ -158,6 +167,7 @@
                     </svg>
                   </span>
                 </td>
+                <td class="rate__unlim"></td>
               </tr>
             </tbody>
           </table>

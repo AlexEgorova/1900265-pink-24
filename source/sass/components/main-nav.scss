@@ -1,5 +1,7 @@
 .main-nav {
-  background-color: $dark;
+  height: 66px;
+  background-color: $black;
+  opacity: 0.3;
   text-align: center;
   align-items: center;
 }
@@ -7,9 +9,12 @@
 .main-nav__toggle {
   background-color: transparent;
   border: none;
+  fill: $white;
+  opacity: 1;
 }
 
 .main-nav__list {
+  display: none; /*ВЫКЛЮЧЕНО*/
   margin: 0;
   padding: 0;
 }
@@ -27,9 +32,16 @@
   color: $white;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav {
+    height: 110px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-nav {
     background-color: transparent;
+    height: 110px;
   }
 
   .main-nav__toggle {
