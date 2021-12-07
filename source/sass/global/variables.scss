@@ -35,3 +35,42 @@ $color-page: #000000;
 $tablet-width: 660px;
 $desktop-width: 1200px;
 $mobile-width-only: 659px;
+
+
+//button-form
+@mixin btn-form {
+  display: block;
+  min-width: 276px;
+  padding: 23px 45px;
+  background: $green;
+  color: $white;
+  border: 2px solid #2aab6d;
+  border-radius: 1px;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: $weight-bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+//button-catalog
+@mixin btn-rounded {
+  display: block;
+  min-width: 280px;
+  margin: 0 auto;
+  font-family: inherit;
+  font-weight: $weight-bold;
+  font-size: 18px;
+  line-height: 18px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+//align
+@mixin align-center {
+  align-items: center;
+  text-align: center;
+}

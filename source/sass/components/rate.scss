@@ -4,8 +4,8 @@
 
 .rate__wrapper {
   display: block;
-  align-items: center;
-  text-align: center;
+
+  @include align-center;
 }
 
 .rate__table {
@@ -34,18 +34,18 @@
   font-weight: $weight-bold;
   font-size: 16px;
   line-height: 30px;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
+
+  @include align-center;
 }
 
 .rate__price {
   font-weight: $weight-light;
   font-size: 18px;
   line-height: 30px;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
+
+  @include align-center;
 }
 
 .rate__body {

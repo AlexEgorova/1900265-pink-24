@@ -1,13 +1,13 @@
 .card__legend {
   background-color: $pink;
-  align-items: center;
-  text-align: center;
   color: $white;
+
+  @include align-center;
 }
 
 .card__user-name {
   align-items: center;
-  font-weight: 700;
+  font-weight: $weight-bold;
   font-size: 14px;
   line-height: 24px;
   color: $dark;
@@ -16,7 +16,7 @@
 .card__period {
   align-items: center;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: $weight-light;
   font-size: 12px;
   line-height: 24px;
   color: $dark;
@@ -24,7 +24,7 @@
 
 .card__text {
   align-items: center;
-  font-weight: 400;
+  font-weight: $weight-normal;
   font-size: 14px;
   line-height: 24px;
   color: $dark;

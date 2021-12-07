@@ -3,31 +3,29 @@
 }
 
 .reviews__item {
-  align-items: center;
-  text-align: center;
+  @include align-center;
 }
 
 .reviews__author-name {
-  font-weight: 700;
+  font-weight: $weight-bold;
   font-size: 18px;
   line-height: 30px;
-  align-items: center;
-  text-align: center;
   color: $black;
+
+  @include align-center;
 }
 
 .reviews__text {
-  font-weight: 400;
+  font-weight: $weight-normal;
   font-size: 14px;
   line-height: 30px;
-  align-items: center;
-  text-align: center;
   color: $dark;
+
+  @include align-center;
 }
 
 .reviews__toggles {
-  align-items: center;
-  text-align: center;
+  @include align-center;
 }
 
 .slider__toggles {

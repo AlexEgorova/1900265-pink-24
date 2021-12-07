@@ -3,30 +3,29 @@
 }
 
 .upload__wrapper {
-  align-items: center;
-  text-align: center;
+  @include align-center;
 }
 
 .upload__text {
-  font-weight: 400;
+  font-weight: $weight-normal;
   font-size: 14px;
   line-height: 30px;
-  align-items: center;
-  text-align: center;
   color: $dark;
+
+  @include align-center;
 }
 
 .upload__button--submit {
   color: $pink;
-  border: 3px solid #d22856;
-  box-sizing: border-box;
-  border-radius: 30px;
+  border: 3px solid $pink;
+
+  @include btn-rounded;
 }
 
 .upload__button--reset {
   color: $blue-dark;
   opacity: 0.1;
-  border: 3px solid #283645;
-  box-sizing: border-box;
-  border-radius: 30px;
+  border: 3px solid $dark;
+
+  @include btn-rounded;
 }

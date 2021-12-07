@@ -1,15 +1,7 @@
-.user-data {
-  label {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    color: $pink;
-    text-transform: uppercase;
-    align-items: center;
-  }
-
-  input {
-    border: 2px solid #e5e5e5;
-    border-radius: 1px;
+//desktop
+@media (min-width: $desktop-width) {
+  .user-data .form-inner {
+    display: flex;
+    flex-direction: row;
   }
 }

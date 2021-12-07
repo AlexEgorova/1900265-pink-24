@@ -1,17 +1,3 @@
-.progress__title {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: $pink;
-  text-transform: uppercase;
-  align-items: center;
-  text-align: center;
-}
-
-.progress__list {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  align-items: center;
-  color: $dark;
+.progress {
+  background: $light;
 }
