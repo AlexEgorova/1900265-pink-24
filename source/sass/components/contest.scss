@@ -8,8 +8,25 @@
   @include align-center;
 }
 
+.contest__form fieldset {
+  border: none;
+}
+
+.contest__button {
+  margin: 0 auto;
+
+  @include btn-form;
+}
+
 .contest__form--legend {
   display: inline-block;
   margin: 0 auto;
   text-transform: uppercase;
+}
+
+//desktop
+@media (min-width: $desktop-width) {
+  .contest__form fieldset:not(:first-child) {
+    border: 2px solid $grey;
+  }
 }

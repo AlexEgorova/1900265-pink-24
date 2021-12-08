@@ -15,17 +15,17 @@
   @include align-center;
 }
 
-.upload__button--submit {
-  color: $pink;
-  border: 3px solid $pink;
-
+.upload__button {
   @include btn-rounded;
-}
 
-.upload__button--reset {
-  color: $blue-dark;
-  opacity: 0.1;
-  border: 3px solid $dark;
+  &--submit {
+    color: $pink;
+    border: 3px solid $pink;
+  }
 
-  @include btn-rounded;
+  &--reset {
+    color: $blue-dark;
+    opacity: 0.1;
+    border: 3px solid $dark;
+  }
 }

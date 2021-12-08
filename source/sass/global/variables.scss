@@ -69,6 +69,16 @@ $mobile-width-only: 659px;
   padding-bottom: 21px;
 }
 
+//Titles
+@mixin form-title {
+  font-family: inherit;
+  font-weight: $weight-normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
 //align
 @mixin align-center {
   align-items: center;
