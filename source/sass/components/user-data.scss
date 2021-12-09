@@ -1,7 +1,4 @@
-//desktop
-@media (min-width: $desktop-width) {
-  .user-data .form-inner {
-    display: flex;
-    flex-direction: row;
-  }
+.user-data {
+  margin: 0;
+  padding: 22px;
 }

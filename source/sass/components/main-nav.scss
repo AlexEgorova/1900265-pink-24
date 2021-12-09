@@ -1,9 +1,18 @@
 .main-nav {
-  height: 66px;
+  min-height: 66px;
   background-color: $black;
   opacity: 0.3;
 
   @include align-center;
+}
+
+.main-nav__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__logo-word {
+  min-height: 23px;
 }
 
 .main-nav__toggle {
@@ -31,16 +40,20 @@
   color: $white;
 }
 
+//Tablet
 @media (min-width: $tablet-width) {
   .main-nav {
-    height: 110px;
+    min-height: 110px;
   }
 }
 
+//Desktop
 @media (min-width: $desktop-width) {
   .main-nav {
+    display: flex;
+    justify-content: space-between;
     background-color: transparent;
-    height: 110px;
+    min-height: 110px;
   }
 
   .main-nav__toggle {

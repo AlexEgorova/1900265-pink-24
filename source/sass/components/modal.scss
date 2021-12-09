@@ -23,5 +23,7 @@
 }
 
 .modal__button {
+  margin: 0 auto;
+
   @include btn-form;
 }

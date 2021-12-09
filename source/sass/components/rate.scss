@@ -23,11 +23,11 @@
 
 .rate__base,
 .rate__unlim {
-  width: 7%;
+  min-width: 7%;
 }
 
 .rate__standart {
-  width: 86%;
+  min-width: 86%;
 }
 
 .rate__name {

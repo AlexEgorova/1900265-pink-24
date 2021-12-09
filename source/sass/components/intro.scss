@@ -1,15 +1,21 @@
-.intro-platforms {
+.intro {
   background-color: $blue-dark;
   color: $white;
   text-align: center;
   padding-top: 20px;
 }
 
-.intro-platforms__wrapper {
-  height: 271px;
+.intro__sudtitle {
+  font-weight: $weight-light;
+  font-size: 24px;
+  line-height: 29px;
 }
 
-.intro-platforms__button {
+.intro__wrapper {
+  min-height: 271px;
+}
+
+.intro__button {
   @include btn-rounded;
   color: $white;
   border: 3px solid $white;
@@ -18,17 +24,17 @@
   margin-bottom: 32px;
 }
 
-.intro-platforms__list {
+.intro__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.intro-platforms__link {
+.intro__link {
   margin-right: 35px;
 }
 
-.intro-platforms__legend {
+.intro__legend {
   font-weight: $weight-light;
   font-size: 14px;
   line-height: 24px;

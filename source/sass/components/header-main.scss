@@ -1,21 +1,17 @@
 .header-main {
-  height: 733px;
-}
-
-.header-main__title {
-  line-height: 29px;
+  min-height: 733px;
 }
 
 //tablet
 @media (min-width: $tablet-width) {
   .header-main {
-    height: 729px;
+    min-height: 729px;
   }
 }
 
 //desktop
 @media (min-width: $desktop-width) {
   .header-main {
-    height: 853px;
+    min-height: 853px;
   }
 }
