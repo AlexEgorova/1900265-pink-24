@@ -3,20 +3,9 @@
   color: $white;
 }
 
-.header__wrapper {
-  background-image: $bg-header1-mobile;
-  background-repeat: no-repeat;
-  background-size: cover;
+.header__main {
+  min-height: 733px;
 }
-
-.header__nav {
-  display: flex;
-  justify-content: space-between;
-  min-height: 66px;
-  padding: 20px;
-  background-color: $blue-dark;
-}
-
 
 .header__title {
   font-weight: $weight-light;
@@ -32,18 +21,14 @@
 
 //tablet
 @media (min-width: $tablet-width) {
-  .header__wrapper--main {
+  .header__main {
     min-height: 729px;
   }
 }
 
 //desktop
 @media (min-width: $desktop-width) {
-  .header__wrapper--main {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 1200px;
+  .header__main {
     min-height: 853px;
   }
 }
