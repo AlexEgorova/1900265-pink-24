@@ -1,18 +1,29 @@
 .intro {
   background-color: $blue-dark;
+  background-image: $bg-header1-mobile;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: $white;
   text-align: center;
-  padding: 28px 20px 38px 20px;
+  padding: 0 20px;
+}
+
+.intro__wrapper {
+  height: 271px;
+
+  @media (min-width: $tablet-width) {
+    height: 619px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 743px;
+  }
 }
 
 .intro__sudtitle {
   font-weight: $weight-light;
   font-size: 24px;
   line-height: 29px;
-}
-
-.intro__wrapper {
-  min-height: 271px;
 }
 
 .intro__button {
@@ -32,17 +43,13 @@
   &:active {
     opacity: 0.3;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .intro__button {
-    max-width: 300px;
+  @media (min-width: $tablet-width) {
+    width: 300px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .intro__button {
-    max-width: 300px;
+  @media (min-width: $tablet-width) {
+    width: 300px;
   }
 }
 
@@ -52,15 +59,34 @@
   align-items: center;
 }
 
-.intro__link {
+.intro__item:not(:last-child) {
   margin-right: 35px;
 }
 
-.intro__link--apple {
+.intro__link {
   display: block;
-  width: 47px;
-  background-image: $apple-logo;
-  background-repeat: no-repeat;
+  min-width: 47px;
+
+  &--apple {
+    width: 47px;
+    height: 56px;
+    background-image: $apple-logo;
+    background-repeat: no-repeat;
+  }
+
+  &--android {
+    width: 43px;
+    height: 47px;
+    background-image: $android-logo;
+    background-repeat: no-repeat;
+  }
+
+  &--microsoft {
+    width: 44px;
+    height: 41px;
+    background-image: $microsoft-logo;
+    background-repeat: no-repeat;
+  }
 }
 
 .intro__legend {

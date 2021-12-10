@@ -2,6 +2,18 @@
   background-color: $bg-page;
 }
 
+.reviews__wrapper {
+  height: 364px;
+
+  @media (min-width: $tablet-width) {
+    height: 221px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 292px;
+  }
+}
+
 .reviews__item {
   @include align-center;
 }
