@@ -12,5 +12,13 @@
 }
 
 .header__inner-page {
-  min-height: 237px;
+  min-height: 733px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 729px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 853px;
+  }
 }

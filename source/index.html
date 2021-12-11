@@ -79,15 +79,15 @@
           <p class="advantages__subtitle">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <h3 class="advantages__title advantages__title--item">Поднимает настроение</h3>
+              <h3 class="advantages__title">Поднимает настроение</h3>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item">
-              <h3 class="advantages__title advantages__title--item">Меняет мир вокруг</h3>
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages__item advantages__item--friends">
-              <h3 class="advantages__title advantages__title--item">Заводит новых друзей</h3>
+              <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
@@ -100,14 +100,15 @@
             <blockquote class="reviews__item">
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__author-profile">25 лет, водитель трамвая</p>
                 <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
           </div>
           <p class="reviews__toggles toggles">
-            <button class="toggles__btn toggles__btn--current" type="button">1</button>
-            <button class="toggles__btn" type="button">2</button>
-            <button class="toggles__btn" type="button">3</button>
+            <button class="toggles__btn toggles__btn--current" type="button" aria-label="Показан первый отзыв."></button>
+            <button class="toggles__btn toggles__btn-next" type="button" aria-label="Следующий отзыв."></button>
+            <button class="toggles__btn" type="button" aria-label="Следующий отзыв."></button>
           </p>
         </div>
       </section>
@@ -116,7 +117,10 @@
           <h2 class="visually-hidden">Тарифы</h2>
           <table class="rate__table">
             <tr class="rate__head">
-              <td class="rate__base"></td>
+              <td class="rate__base">
+                <p class="visually-hidden rate__name">База</p>
+                <p class="visually-hidden rate__price">1,99 USD</p>
+              </td>
               <td class="rate__standart">
                 <p class="rate__name">Стандарт</p>
                 <p class="rate__price">3,99 USD</p>
@@ -128,7 +132,7 @@
                 <td class="rate__base"></td>
                 <td class="rate__option">
                   <p>Розовый фильтр</p>
-                  <span class="rate__noun">да</span>
+                  <span class="rate__noun rate__noun--done"></span>
                 </td>
                 <td class="rate__unlim"></td>
               </tr>
@@ -136,7 +140,7 @@
                 <td class="rate__base"></td>
                 <td class="rate__option">
                   <p>Смайлики</p>
-                  <span class="rate__noun">да</span>
+                  <span class="rate__noun rate__noun--done"></span>
                 </td>
                 <td class="rate__unlim"></td>
               </tr>
@@ -144,16 +148,19 @@
                 <td class="rate__base"></td>
                 <td class="rate__option">
                   <p>Комментарии</p>
-                  <span class="rate__noun">нет</span>
+                  <span class="rate__noun rate__noun--none"></span>
                 </td>
-                <td class="rate__unlim"></td>
+                <td class="rate__unlim">
+                  <p class="visually-hidden rate__name">Анлим</p>
+                  <p class="visually-hidden rate__price">9,99 USD</p>
+                </td>
               </tr>
             </tbody>
           </table>
           <p class="rate__toggles toggles">
-            <button class="toggles__btn" type="button">1</button>
-            <button class="toggles__btn toggles__btn--current" type="button">2</button>
-            <button class="toggles__btn" type="button">3</button>
+            <button class="toggles__btn" type="button" aria-label="Следующий тариф."></button>
+            <button class="toggles__btn toggles__btn--current" type="button" aria-label="Тариф Стандарт."></button>
+            <button class="toggles__btn" type="button" aria-label="Следующий тариф."></button>
           </p>
         </div>
       </section>
@@ -229,7 +236,7 @@
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия.">
             <svg width="27" height="34" viewBox="0 0 27 34" role="img" aria-label="HTML Академия." xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" fill="#D22856"/>
+              <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"/>
             </svg>
           </a>
         </div>

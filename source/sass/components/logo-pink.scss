@@ -1,0 +1,13 @@
+.logo-pink__link {
+  &:first-child {
+    margin-right: 12px;
+  }
+
+  &--word:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+  }
+}

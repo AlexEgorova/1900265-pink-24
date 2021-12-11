@@ -1,17 +1,29 @@
 .contacts {
-  background-color: $white;
-
   @include align-center;
+  background-color: $white;
 }
 
 .contacts__title {
+  @include align-center;
   font-weight: $weight-light;
   font-size: 24px;
   line-height: 120%;
   color: $dark;
-
-  @include align-center;
 }
+
+// .contacts__list {
+//   display: flex;
+//   flex-direction: column;
+
+//   @media (min-width: $tablet-width) {
+
+//     flex-direction: row;
+//   }
+
+//   @media (min-width: $desktop-width) {
+
+//   }
+// }
 
 .contacts__title--item {
   font-weight: $weight-bold;
@@ -20,10 +32,9 @@
 }
 
 .contacts__text {
+  @include align-center;
   font-weight: $weight-light;
   font-size: 24px;
   line-height: 33px;
   color: $pink;
-
-  @include align-center;
 }

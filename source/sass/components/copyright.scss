@@ -9,4 +9,21 @@
   line-height: 18px;
   align-items: center;
   color: $dark;
+  margin-right: 15px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.copyright__link {
+  fill: $pink;
+
+  &:hover svg {
+    fill: $dark;
+  }
+
+  &:active svg {
+    fill-opacity: 0.3;
+  }
 }

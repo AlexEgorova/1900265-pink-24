@@ -1,10 +1,61 @@
 .footer {
-  @include align-center;
+  min-height: 284px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 127px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 197px;
+  }
 }
 
-@media (min-width: $tablet-width) {
-  .footer__wrapper {
+.footer__wrapper {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 252px;
+  }
+}
+
+.footer__social {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 47px 20px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 81px 152px;
+  }
+}
+
+.footer__copyright {
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 47px 20px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 81px 152px;
   }
 }
