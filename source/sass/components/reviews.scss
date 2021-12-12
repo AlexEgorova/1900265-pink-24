@@ -3,7 +3,7 @@
 }
 
 .reviews__wrapper {
-  height: 364px;
+  min-height: 364px;
   padding: 50px 20px;
 
   @media (min-width: $tablet-width) {

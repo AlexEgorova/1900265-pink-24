@@ -3,14 +3,28 @@
 }
 
 .rate__wrapper {
-  display: block;
-
   @include align-center;
+  min-height: 506px;
+  padding-top: 129px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+    padding-top: 114px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 534px;
+    padding-top: 159px;
+    padding-bottom: 98px;
+  }
 }
 
 .rate__table {
   margin: 0 auto;
   min-width: 100%;
+  margin-bottom: 45px;
 }
 
 .rate__head {
@@ -78,5 +92,11 @@
   &--none {
     background-image: $noun-none;
     background-repeat: no-repeat;
+  }
+}
+
+.rate__toggles {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

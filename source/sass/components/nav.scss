@@ -1,11 +1,6 @@
 .nav {
   text-align: center;
-  min-height: 66px;
   background-color: $black;
-
-  @media (min-width: $tablet-width) {
-    height: 110px;
-  }
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
@@ -13,9 +8,14 @@
 }
 
 .nav__wrapper {
-  padding: 20px;
   display: flex;
   justify-content: space-between;
+  min-height: 66px;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
@@ -25,11 +25,13 @@
 
 .nav__logo {
   min-height: 23px;
+  min-width: 74px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     min-height: 40px;
     min-width: 145px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,7 +39,7 @@
   }
 }
 
-.nav__logo-word {
+.nav__logo-modile {
   fill: $white;
 
   &:hover {
@@ -48,15 +50,47 @@
     fill: $white;
     fill-opacity: 0.3;
   }
-}
 
-.nav__logo-glasses {
-  display: none;
-}
-
-@media (min-width: $tablet-width) {
-  .nav__logo-glasses {
+  @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.nav__logo-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    fill: $white;
+
+    &:hover {
+      fill: $pink;
+    }
+
+    &:active {
+      fill: $white;
+      fill-opacity: 0.3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.nav__logo-desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
     fill: $white;
 
     &:hover {
@@ -99,6 +133,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     border: none;
+    box-shadow: none;
     background: transparent;
   }
 }

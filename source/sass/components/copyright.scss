@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .copyright__text {
@@ -17,6 +18,10 @@
 }
 
 .copyright__link {
+  svg {
+    margin: 0;
+  }
+
   fill: $pink;
 
   &:hover svg {

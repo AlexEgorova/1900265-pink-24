@@ -10,4 +10,20 @@
   &:active {
     fill-opacity: 0.3;
   }
+
+  &--desctop {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    &--icon {
+      display: none;
+    }
+
+    &--word {
+      display: none;
+    }
+  }
 }
