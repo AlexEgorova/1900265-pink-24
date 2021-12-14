@@ -5,6 +5,7 @@
   align-items: center;
   min-width: 280px;
   min-height: 284px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -14,7 +15,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 940px;
+    @include max-width;
+
     min-height: 197px;
     padding-right: 130px;
   }

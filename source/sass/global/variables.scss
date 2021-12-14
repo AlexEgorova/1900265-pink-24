@@ -86,3 +86,8 @@ $mobile-width-only: 659px;
   color: $pink;
   text-transform: uppercase;
 }
+
+//ограничение
+@mixin max-width {
+  width: 1200px;
+}

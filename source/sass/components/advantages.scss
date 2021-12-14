@@ -7,6 +7,7 @@
 .advantages__wrapper {
   min-width: 280px;
   min-height: 752px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     min-width: 620px;
@@ -14,7 +15,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 940px;
+    @include max-width;
+
     min-height: 933px;
     margin-bottom: 59px;
   }

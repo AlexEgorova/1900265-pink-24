@@ -1,6 +1,9 @@
 .header {
   background-color: $blue-dark;
   color: $white;
+  background-image: $bg-header1-mobile;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__wrapper {
@@ -14,8 +17,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 940px;
+    @include max-width;
     min-height: 853px;
+  }
+
+  &--catalog {
+    min-height: 237px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 620px;
+      min-height: 440px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include max-width;
+
+      min-height: 394px;
+    }
   }
 }
 
@@ -24,4 +42,16 @@
   font-size: 24px;
   line-height: 33px;
   text-align: center;
+  margin: 0 auto;
+  padding: 36px 74px 84px 74px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding: 81px 151px 143px 151px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 81px 110px 104px 104px;
+  }
 }

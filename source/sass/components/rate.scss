@@ -5,6 +5,7 @@
 .rate__wrapper {
   min-width: 320px;
   min-height: 506px;
+  margin: 0 auto;
   padding-top: 129px;
   padding-bottom: 49px;
 
@@ -16,7 +17,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 940px;
+    @include max-width;
+
     min-height: 534px;
     padding-top: 159px;
     padding-bottom: 98px;

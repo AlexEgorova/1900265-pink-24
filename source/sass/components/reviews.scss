@@ -5,6 +5,7 @@
 .reviews__wrapper {
   min-width: 280px;
   min-height: 364px;
+  margin: 0 auto;
   padding: 50px 20px;
 
   @media (min-width: $tablet-width) {
@@ -14,7 +15,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 940px;
+    @include max-width;
+
     min-height: 292px;
   }
 }
