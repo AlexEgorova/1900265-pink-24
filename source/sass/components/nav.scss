@@ -10,16 +10,18 @@
 .nav__wrapper {
   display: flex;
   justify-content: space-between;
+  min-width: 280px;
   min-height: 66px;
   padding: 20px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    height: 110px;
+    min-height: 110px;
+    min-width: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
-    max-width: 1200px;
+    max-width: 940px;
   }
 }
 

@@ -9,17 +9,23 @@
 }
 
 .intro__wrapper {
-  height: 271px;
+  min-width: 280px;
+  min-height: 271px;
   padding-top: 20px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    height: 619px;
+    min-width: 620px;
+    min-height: 619px;
     padding-top: 74px;
+    padding-bottom: 119px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 743px;
+    min-width: 940px;
+    min-height: 743px;
     padding-top: 98px;
+    padding-bottom: 130px;
   }
 }
 
@@ -37,6 +43,7 @@
   border-radius: 30px;
   padding: 21px 39px;
   margin-bottom: 32px;
+  width: 280px;
 
   &:hover {
     color: $pink;

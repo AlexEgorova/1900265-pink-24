@@ -1,24 +1,22 @@
-.footer {
-  min-height: 284px;
-
-  @media (min-width: $tablet-width) {
-    min-height: 127px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 197px;
-  }
-}
-
 .footer__wrapper {
   display: grid;
   grid-template-rows: auto;
   justify-items: center;
   align-items: center;
+  min-width: 280px;
+  min-height: 284px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    min-width: 620px;
+    min-height: 127px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 940px;
+    min-height: 197px;
+    padding-right: 130px;
   }
 }
 
@@ -57,6 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 81px 152px;
+    margin-right: 0 auto;
+    padding: 0;
   }
 }

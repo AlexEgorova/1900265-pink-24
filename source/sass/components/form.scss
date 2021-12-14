@@ -56,7 +56,10 @@
 }
 
 .form__legend {
-  display: inline-block;
-  margin: 0 auto;
   text-transform: uppercase;
+  font-style: normal;
+  font-weight: $weight-normal;
+  font-size: 14px;
+  line-height: 214%;
+  // align-items: center;
 }

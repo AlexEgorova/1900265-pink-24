@@ -3,22 +3,25 @@
   color: $white;
 }
 
-.header__title {
-  font-weight: $weight-light;
-  font-size: 24px;
-  line-height: 33px;
-
-  @include align-center;
-}
-
-.header__inner-page {
+.header__wrapper {
+  min-width: 280px;
   min-height: 733px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    min-width: 620px;
     min-height: 729px;
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 940px;
     min-height: 853px;
   }
+}
+
+.header__title {
+  font-weight: $weight-light;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
 }

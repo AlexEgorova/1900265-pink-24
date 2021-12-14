@@ -28,6 +28,7 @@ $apple-logo: url("../img/apple-logo.svg");
 $android-logo: url("../img/android-logo.svg");
 $microsoft-logo: url("../img/microsoft-logo.svg");
 $adv-friends: url("../img/iphone-3.jpg");
+
 $noun-done: url("../img/yes.svg");
 $noun-none: url("../img/no.svg");
 
@@ -84,10 +85,4 @@ $mobile-width-only: 659px;
   line-height: 18px;
   color: $pink;
   text-transform: uppercase;
-}
-
-//align
-@mixin align-center {
-  align-items: center;
-  text-align: center;
 }

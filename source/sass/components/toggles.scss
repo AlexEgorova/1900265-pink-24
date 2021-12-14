@@ -1,5 +1,5 @@
 .toggles {
-  @include align-center;
+  text-align: center;
 
   @media (min-width: $desktop-width) {
     display: none;

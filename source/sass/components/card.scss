@@ -1,8 +1,14 @@
 .card__legend {
+  display: inline-block;
+  min-width: 140px;
+  min-height: 36px;
   background-color: $pink;
   color: $white;
-
-  @include align-center;
+  font-weight: $weight-bold;
+  font-size: 12px;
+  line-height: 200%;
+  text-align: center;
+  padding: 13px 20px;
 }
 
 .card__user-name {
