@@ -7,19 +7,14 @@
 }
 
 .header__wrapper {
-  @include mobile-max-width;
-
   min-height: 733px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    @include tablet-max-width;
-
     min-height: 729px;
   }
 
   @media (min-width: $desktop-width) {
-    @include desktop-max-width;
     min-height: 853px;
   }
 
