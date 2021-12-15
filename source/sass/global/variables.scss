@@ -28,7 +28,7 @@ $apple-logo: url("../img/apple-logo.svg");
 $android-logo: url("../img/android-logo.svg");
 $microsoft-logo: url("../img/microsoft-logo.svg");
 $adv-friends: url("../img/iphone-3.jpg");
-
+$heard: url("../img/heart.svg");
 $noun-done: url("../img/yes.svg");
 $noun-none: url("../img/no.svg");
 
@@ -88,6 +88,14 @@ $mobile-width-only: 659px;
 }
 
 //ограничение
-@mixin max-width {
-  width: 1200px;
+@mixin mobile-max-width {
+  width: 280px;
+}
+
+@mixin tablet-max-width {
+  width: 620px;
+}
+
+@mixin desktop-max-width {
+  width: 960px;
 }

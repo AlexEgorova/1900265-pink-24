@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include max-width;
+    @include desktop-max-width;
   }
 }
 

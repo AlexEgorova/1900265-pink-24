@@ -3,21 +3,23 @@
 }
 
 .rate__wrapper {
-  min-width: 320px;
+  @include mobile-max-width;
+
   min-height: 506px;
   margin: 0 auto;
   padding-top: 129px;
   padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    min-width: 620px;
+    @include tablet-max-width;
+
     min-height: 400px;
     padding-top: 114px;
     padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    @include max-width;
+    @include desktop-max-width;
 
     min-height: 534px;
     padding-top: 159px;

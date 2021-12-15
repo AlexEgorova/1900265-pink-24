@@ -1,13 +1,14 @@
 .main {
+  @include mobile-max-width;
+
   color: $dark;
   margin: 0 auto;
-  min-width: 280px;
 
   @media (min-width: $tablet-width) {
-    min-width: 620px;
+    @include tablet-max-width;
   }
 
   @media (min-width: $desktop-width) {
-    @include max-width;
+    @include desktop-max-width;
   }
 }

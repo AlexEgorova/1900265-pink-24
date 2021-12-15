@@ -1,29 +1,32 @@
 .intro {
-  // background-color: $blue-dark;
+  background-color: $blue-dark;
+  background-size: cover;
+
   // background-image: $bg-header1-mobile;
   // background-repeat: no-repeat;
   // background-size: cover;
   color: $white;
   text-align: center;
-  padding: 0 20px;
 }
 
 .intro__wrapper {
-  min-width: 280px;
+  @include mobile-max-width;
+
   min-height: 271px;
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    min-width: 620px;
+    @include tablet-max-width;
+
     min-height: 619px;
     padding-top: 74px;
     padding-bottom: 119px;
   }
 
   @media (min-width: $desktop-width) {
-    @include max-width;
+    @include desktop-max-width;
 
     min-height: 743px;
     padding-top: 98px;
@@ -40,6 +43,7 @@
 
 .intro__button {
   @include btn-rounded;
+
   color: $white;
   border: 3px solid $white;
   border-radius: 30px;
