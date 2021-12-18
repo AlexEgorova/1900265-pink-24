@@ -1,4 +1,15 @@
 .user-contacts {
-  margin: 0;
-  padding: 22px;
+  @include mobile-max-width;
+
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-max-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

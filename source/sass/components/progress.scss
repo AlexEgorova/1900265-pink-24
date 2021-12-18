@@ -1,8 +1,33 @@
 .progress {
   background: $light;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    background: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include desktop-max-width;
+    margin: 0;
+    padding: 0;
+  }
 }
 
-.progress__title {
-  @include form-title;
-  text-align: center;
+.progress__list {
+  @include mobile-max-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-max-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 840px;
+    // margin: 0;
+    display: grid;
+    grid-template-columns: 260px 260px 260px;
+    column-gap: 57px;
+    row-gap: 47px;
+  }
 }
