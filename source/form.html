@@ -58,107 +58,112 @@
           <h2  class="visually-hidden">Заполнение формы</h2>
           <p class="contest__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
           <form class="form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="form__group user-data">
-              <legend class="visually-hidden">Данные пользователя</legend>
-              <div class="form__inner form__inner--user-data">
-                <label class="form__label" for="surname">Фамилия:</label>
-                <input class="form__input" type="text" id="surname" placeholder="Укажите фамилию *" required>
-              </div>
-              <div class="form__inner form__inner--user-data">
-                <label class="form__label" for="name">Имя:</label>
-                <input class="form__input" type="text" id="name" placeholder="Введите ваше имя *" required>
-              </div>
-              <div class="form__inner form__inner--user-data">
-                <label class="form__label" for="patronymic">Отчество:</label>
-                <input class="form__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
-              </div>
-            </fieldset>
-            <fieldset class="form__group progress">
-              <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="progress__list">
-                <li class="progress__item">
-                  <label class="control">
-                    <input class="visually-hidden control__input" type="checkbox" name="selfie" id="selfie" checked>
-                    <span class="control__mark"></span>
-                    <span class="control__label">Сделал селфи с акулой</span>
-                  </label>
-                </li>
-                <li class="progress__item">
-                  <label class="control">
-                    <input class="visually-hidden control__input" type="checkbox" name="beach" id="beach" checked>
-                    <span class="control__mark"></span>
-                    <span class="control__label">Обгорел на пляже</span>
-                  </label>
-                </li>
-                <li class="progress__item">
-                  <label class="control">
-                    <input class="visually-hidden control__input" type="checkbox" name="Norris" id="Norris">
-                    <span class="control__mark"></span>
-                    <span class="control__label">Видел Чака Норриса</span>
-                  </label>
-                </li>
-                <li class="progress__item">
-                  <label class="control">
-                    <input class="visually-hidden control__input" type="checkbox" name="souvenirs" id="souvenirs">
-                    <span class="control__mark"></span>
-                    <span class="control__label">Накупил сувениров</span>
-                  </label>
-                </li>
-                <li class="progress__item">
-                  <label class="control">
-                    <input class="visually-hidden control__input" type="checkbox" name="tower" id="tower" checked>
-                    <span class="control__mark"></span>
-                    <span class="control__label">Удержал башню</span>
-                  </label>
-                </li>
-                <li class="progress__item">
-                  <label class="control">
-                    <input class="visually-hidden control__input" type="checkbox" name="hotel" id="hotel">
-                    <span class="control__mark"></span>
-                    <span class="control__label">Разгромил отель</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__group user-contacts">
-              <legend class="visually-hidden">Контактная информация</legend>
-              <div class="form__inner user-contacts__phone">
-                <label class="form__label" for="phone">НОМЕР ТЕЛЕФОНА</label>
-                <input class="form__input" type="number" id="phone" placeholder="Номер, пожалуйста">
-              </div>
-              <div class="form__inner user-contacts__email">
-                <label class="form__label" for="email">АДРЕС ПОЧТЫ</label>
-                <input class="form__input" type="email" id="email" placeholder="Введите почту *" required>
-              </div>
-            </fieldset>
-            <fieldset class="form__group platforms">
-              <legend class="form__title">С каким приложением путешествовали?</legend>
-              <ul class="platforms__list">
-                <li class="platforms__item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="platforms" value="iOS" id="iOS" checked>
-                    <span class="control-label">Pink для iOS</span>
-                  </label>
-                </li>
-                <li class="platforms__item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="platforms" value="Android" id="Android">
-                    <span class="control-label">Pink на Android</span>
-                  </label>
-                </li>
-                <li class="platforms__item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="platforms" value="Windows" id="Windows">
-                    <span class="control-label">Windows Phone</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__group emotions">
-              <legend class="form__title form__title--emotions">Опишите свои эмоции</legend>
-              <label for="emotions" class="visually-hidden">Текст</label>
-              <input class="form__input" type="text" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
-            </fieldset>
+            <div class="form__wrapper">
+              <fieldset class="form__group form__group--user-data user-data">
+                <legend class="visually-hidden">Данные пользователя</legend>
+                <div class="form__inner form__inner--user-data">
+                  <label class="form__label user-data__label" for="surname">Фамилия:</label>
+                  <input class="form__input user-data__input" type="text" id="surname" placeholder="Укажите фамилию *" required>
+                </div>
+                <div class="form__inner form__inner--user-data">
+                  <label class="form__label user-data__label" for="name">Имя:</label>
+                  <input class="form__input user-data__input" type="text" id="name" placeholder="Введите ваше имя *" required>
+                </div>
+                <div class="form__inner form__inner--user-data">
+                  <label class="form__label user-data__label" for="patronymic">Отчество:</label>
+                  <input class="form__input user-data__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+                </div>
+              </fieldset>
+              <fieldset class="form__group form__group--progress progress">
+                <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+                <ul class="progress__list">
+                  <li class="progress__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="selfie" id="selfie" checked>
+                      <span class="control__mark"></span>
+                      <span class="control__label">Сделал селфи с акулой</span>
+                    </label>
+                  </li>
+                  <li class="progress__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="beach" id="beach" checked>
+                      <span class="control__mark"></span>
+                      <span class="control__label">Обгорел на пляже</span>
+                    </label>
+                  </li>
+                  <li class="progress__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="Norris" id="Norris">
+                      <span class="control__mark"></span>
+                      <span class="control__label">Видел Чака Норриса</span>
+                    </label>
+                  </li>
+                  <li class="progress__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="souvenirs" id="souvenirs">
+                      <span class="control__mark"></span>
+                      <span class="control__label">Накупил сувениров</span>
+                    </label>
+                  </li>
+                  <li class="progress__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="tower" id="tower" checked>
+                      <span class="control__mark"></span>
+                      <span class="control__label">Удержал башню</span>
+                    </label>
+                  </li>
+                  <li class="progress__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="checkbox" name="hotel" id="hotel">
+                      <span class="control__mark"></span>
+                      <span class="control__label">Разгромил отель</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__group form__group--user-contacts user-contacts">
+                <legend class="form__title user-contacts__title">Контактная информация</legend>
+                <div class="form__inner user-contacts__phone">
+                  <label class="form__label user-contacts__label" for="phone">НОМЕР ТЕЛЕФОНА</label>
+                  <input class="form__input user-contacts__input" type="number" id="phone" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="form__inner user-contacts__email">
+                  <label class="form__label user-contacts__label" for="email">АДРЕС ПОЧТЫ</label>
+                  <input class="form__input user-contacts__input" type="email" id="email" placeholder="Введите почту *" required>
+                </div>
+              </fieldset>
+              <fieldset class="form__group form__group--platforms platforms">
+                <legend class="form__title">С каким приложением путешествовали?</legend>
+                <ul class="platforms__list">
+                  <li class="platforms__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="radio" name="platforms" value="iOS" id="iOS" checked>
+                      <span class="control__mark control__mark--platforms"></span>
+                      <span class="control__label">Pink для iOS</span>
+                    </label>
+                  </li>
+                  <li class="platforms__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="radio" name="platforms" value="Android" id="Android">
+                      <span class="control__mark control__mark--platforms"></span>
+                      <span class="control__label">Pink на Android</span>
+                    </label>
+                  </li>
+                  <li class="platforms__item">
+                    <label class="control">
+                      <input class="visually-hidden control__input" type="radio" name="platforms" value="Windows" id="Windows">
+                      <span class="control__mark control__mark--platforms"></span>
+                      <span class="control__label">Windows Phone</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__group form__group--emotions emotions">
+                <legend class="form__title emotions__title">Опишите свои эмоции</legend>
+                <label for="emotions" class="visually-hidden">Текст</label>
+                <input class="form__input" type="text" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях">
+              </fieldset>
+            </div>
             <button class="form__button" type="submit" aria-label="Отправить форму">Отправить форму</button>
             <p class="form__info">* — обязательные поля</p>
           </form>

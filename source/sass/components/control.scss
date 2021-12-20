@@ -16,6 +16,11 @@
   border-radius: 1px;
   cursor: pointer;
   content: "";
+
+  &--platforms {
+    width: 37px;
+    border-radius: 50%;
+  }
 }
 
 .control__input {
@@ -35,6 +40,17 @@
     height: 16px;
     background-color: $white;
     background-image: $control-tick;
+    content: "";
+  }
+
+  &[type="radio"]:checked + .control__mark::before {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $pink;
     content: "";
   }
 }

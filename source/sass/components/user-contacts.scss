@@ -9,7 +9,28 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include desktop-max-width;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.user-contacts__title {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+.user-contacts__label {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.user-contacts__input {
+  @media (min-width: $tablet-width) {
+    order: 1;
   }
 }
