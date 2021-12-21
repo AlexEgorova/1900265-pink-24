@@ -22,7 +22,7 @@
     min-height: 237px;
 
     @media (min-width: $tablet-width) {
-      @include tablet-max-width;
+      // @include tablet-max-width;
       min-height: 440px;
     }
 
