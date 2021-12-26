@@ -102,6 +102,10 @@
 
     @media (min-width: $desktop-width) {
       display: block;
+      background-image: $adv-joy;
+      background-repeat: no-repeat;
+      width: 186px;
+      height: 294px;
       margin: 0 auto;
     }
   }
@@ -112,10 +116,18 @@
     @media (min-width: $desktop-width) {
       display: block;
       margin: 0 auto;
+      background-image: $adv-change;
+      background-repeat: no-repeat;
+      width: 186px;
+      height: 294px;
     }
   }
 
   &--friends {
+    background-image: $adv-friends;
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 320px;
     order: 3;
     margin: 0 auto;
 
@@ -124,11 +136,15 @@
       position: absolute;
       top: 0;
       left: -280px;
+      width: 268px;
+      height: 547px;
     }
 
     @media (min-width: $desktop-width) {
       position: static;
       order: 0;
+      width: 186px;
+      height: 294px;
     }
   }
 }
