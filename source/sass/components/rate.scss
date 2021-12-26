@@ -11,19 +11,28 @@
   padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    @include tablet-max-width;
-
-    min-height: 400px;
-    padding-top: 114px;
-    padding-bottom: 70px;
+    display: none;
   }
 
-  @media (min-width: $desktop-width) {
-    @include desktop-max-width;
+  &--total {
+    display: none;
 
-    min-height: 534px;
-    padding-top: 159px;
-    padding-bottom: 98px;
+    @media (min-width: $tablet-width) {
+      @include tablet-max-width;
+
+      display: block;
+      min-height: 400px;
+      padding-top: 114px;
+      padding-bottom: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include desktop-max-width;
+
+      min-height: 534px;
+      padding-top: 159px;
+      padding-bottom: 98px;
+    }
   }
 }
 
@@ -32,12 +41,14 @@
   min-width: 320px;
   margin-bottom: 45px;
 
-  @media (min-width: $tablet-width) {
-    min-width: 620px;
-  }
+  &--total {
+    @media (min-width: $tablet-width) {
+      min-width: 620px;
+    }
 
-  @media (min-width: $desktop-width) {
-    min-width: 895px;
+    @media (min-width: $desktop-width) {
+      min-width: 895px;
+    }
   }
 }
 
@@ -47,18 +58,55 @@
   border: 2px solid #283645;
   border-radius: 1px 0 0 0;
   color: $white;
+
+  &--total {
+    background-color: $light;
+  }
 }
 
 .rate__base {
   width: 7%;
+
+  &--total {
+    @media (min-width: $tablet-width) {
+      width: 152px;
+      background: $dark;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 233px;
+    }
+  }
 }
 
 .rate__unlim {
   width: 7%;
+
+  &--total {
+    @media (min-width: $tablet-width) {
+      min-width: 152px;
+      background: $dark;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 233px;
+    }
+  }
 }
 
 .rate__standart {
   min-width: 86%;
+
+  &--total {
+    @media (min-width: $tablet-width) {
+      min-width: 153px;
+      background: $dark;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 233px;
+    }
+  }
 }
 
 .rate__name {
@@ -78,6 +126,22 @@
 .rate__body {
   border: 2px solid #e5e5e5;
   background-color: $white;
+
+  &--total {
+    td {
+      @media (min-width: $tablet-width) {
+        padding-left: 15px;
+        padding-top: 18px;
+        padding-bottom: 17px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-left: 22px;
+        padding-top: 23px;
+        padding-bottom: 23px;
+      }
+    }
+  }
 }
 
 .rate__option {
@@ -90,6 +154,18 @@
   justify-content: space-between;
   margin-left: 20px;
   margin-right: 20px;
+
+  &--total {
+    @media (min-width: $tablet-width) {
+      display: block;
+      min-width: 153px;
+      min-height: 75px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 233px;
+    }
+  }
 }
 
 .rate__noun {
@@ -104,6 +180,12 @@
   &--none {
     background-image: $noun-none;
     background-repeat: no-repeat;
+  }
+
+  &--total {
+    @media (min-width: $tablet-width) {
+      background-position: center;
+    }
   }
 }
 

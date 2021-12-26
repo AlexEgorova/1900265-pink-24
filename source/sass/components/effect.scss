@@ -20,6 +20,11 @@
   }
 }
 
+.effect__timer {
+  background-image: $diagram;
+  background-repeat: no-repeat;
+}
+
 .effect__subtitle {
   font-weight: $weight-bold;
   font-size: 30px;

@@ -10,7 +10,7 @@
     <header class="header">
       <div class="header__wrapper">
         <h1 class="visually-hidden">Приложение "Пинк"</h1>
-        <nav class="nav">
+        <nav class="nav nav--closed nav--nojs">
           <div class="nav__wrapper nav__wrapper--main">
             <a class="nav__logo" href="index.html">
               <svg class="img nav__logo-modile" width="74" height="23" viewBox="0 0 74 23" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип Пинк.">
@@ -29,9 +29,6 @@
               </svg>
             </a>
             <button class="nav__toggle" type="button">
-              <svg width="50" height="24" viewBox="0 0 50 24" role="img" aria-label="Открыть меню." xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.14 0C.99 0 .84.02.7.07S.43.2.33.3A.88.88 0 0 0 0 1v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 3V1a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 11v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 13v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 21v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 23v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Z"/>
-              </svg>
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <ul class="nav__list">
@@ -50,6 +47,24 @@
             </ul>
           </div>
         </nav>
+
+        <script>
+          var nav = document.querySelector('.nav');
+          var navToggle = document.querySelector('.nav__toggle');
+
+          nav.classList.remove('nav--nojs');
+
+          navToggle.addEventListener('click', function() {
+            if (nav.classList.contains('nav--closed')) {
+              nav.classList.remove('nav--closed');
+              nav.classList.add('nav--opened');
+            } else {
+              nav.classList.add('nav--closed');
+              nav.classList.remove('nav--opened');
+            }
+          });
+        </script>
+
         <section class="intro">
           <h2 class="visually-hidden">Скачать приложение Пинк</h2>
           <div class="intro__wrapper">
@@ -85,17 +100,20 @@
           <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
           <p class="advantages__subtitle">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
           <ul class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--joy">
+              <img class="advantages__img advantages__img--joy" src="../img/adv-1.png" width="186" height="382" alt="Фотография с розовым фильтром и смайлом.">
               <h3 class="advantages__title">Поднимает настроение</h3>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--change">
+              <img class="advantages__img advantages__img--change" src="../img/adv-2.png" width="186" height="382" alt="Фотография с розовым фильтром и смайлом.">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
+              </li>
             <li class="advantages__item advantages__item--friends">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <img class="advantages__img advantages__img--friends" src="../img/adv-3.png" width="186" height="382" alt="Фотография с розовым фильтром и смайлом.">
+              <h3 class="advantages__title advantages__title--friends">Заводит новых друзей</h3>
+              <p class="advantages__description advantages__description--friends">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
         </div>
@@ -175,6 +193,48 @@
             <button class="toggles__btn" type="button" aria-label="Следующий тариф."></button>
           </p>
         </div>
+        <div class="rate__wrapper rate__wrapper--total">
+          <h2 class="visually-hidden">Тарифы</h2>
+          <table class="rate__table rate__table--total">
+            <tr class="rate__head rate__head--total">
+              <td class="rate__option rate__option--total">
+                <p class="visually-hidden">Название опции</p>
+              </td>
+              <td class="rate__base rate__base--total">
+                <p class="rate__name">База</p>
+                <p class="rate__price">1,99 USD</p>
+              </td>
+              <td class="rate__standart rate__standart--total">
+                <p class="rate__name">Стандарт</p>
+                <p class="rate__price">3,99 USD</p>
+              </td>
+              <td class="rate__unlim rate__unlim--total">
+                <p class="rate__name">Анлим</p>
+                <p class="rate__price">9,99 USD</p>
+              </td>
+            </tr>
+            <tbody class="rate__body rate__body--total">
+              <tr>
+                <td class="rate__filter">Розовый фильтр</td>
+                <td class="rate__noun rate__noun--done rate__noun--total"></td>
+                <td class="rate__noun rate__noun--done rate__noun--total"></td>
+                <td class="rate__noun rate__noun--done rate__noun--total"></td>
+              </tr>
+              <tr>
+                <td class="rate__filter">Смайлики</td>
+                <td class="rate__noun rate__noun--none rate__noun--total"></td>
+                <td class="rate__noun rate__noun--done rate__noun--total"></td>
+                <td class="rate__noun rate__noun--done rate__noun--total"></td>
+              </tr>
+              <tr>
+                <td class="rate__filter">Комментарии</td>
+                <td class="rate__noun rate__noun--none rate__noun--total"></td>
+                <td class="rate__noun rate__noun--none rate__noun--total"></td>
+                <td class="rate__noun rate__noun--done rate__noun--total"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
@@ -191,7 +251,12 @@
             <li class="contacts__item contacts__item--adress">
               <p class="contacts__subtitle">Приезжайте в гости:</p>
               <a class="contacts__text contacts__text--adress">ул. Большая Конюшенная, 19/8</a>
-              <!-- <img src="./img/map.jpg" width="320" height="200" alt="ул. Большая Конюшенная, 19/8."> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1640545661682!5m2!1sru!2sru"
+              width="320"
+              height="200"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              title="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург">
+              </iframe>
             </li>
           </ul>
         </div>
