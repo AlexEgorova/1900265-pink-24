@@ -18,11 +18,17 @@
     grid-template-columns: 345px 1fr;
     min-height: 429px;
   }
-}
 
-.effect__timer {
-  background-image: $diagram;
-  background-repeat: no-repeat;
+  &::before {
+    content: "";
+    background-image: $diagram;
+    background-repeat: no-repeat;
+    background-size: 238px 276px;
+
+    @media (min-width: $desktop-width) {
+      background-size: 298px 345px;
+    }
+  }
 }
 
 .effect__subtitle {
