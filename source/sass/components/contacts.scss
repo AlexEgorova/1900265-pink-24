@@ -93,10 +93,12 @@
 }
 
 .contacts iframe {
+  @include mobile-max-width;
   display: block;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
+    @include tablet-max-width;
+
     height: 374px;
     text-align: center;
   }

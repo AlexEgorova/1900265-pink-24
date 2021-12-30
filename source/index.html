@@ -109,7 +109,7 @@
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
             <li class="advantages__item advantages__item--friends">
-              <h3 class="advantages__title advantages__title--friends">Заводит новых друзей</h3>
+              <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__description advantages__description--friends">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
@@ -137,117 +137,84 @@
               </div>
             </blockquote>
           </div>
-          <p class="reviews__toggles toggles">
+          <div class="reviews__toggles toggles">
+            <button class="toggles__btn toggles__btn--previous" type="button" aria-label="Следующий отзыв."></button>
             <button class="toggles__btn toggles__btn--current" type="button" aria-label="Показан первый отзыв."></button>
-            <button class="toggles__btn toggles__btn-next" type="button" aria-label="Следующий отзыв."></button>
-            <button class="toggles__btn" type="button" aria-label="Следующий отзыв."></button>
-          </p>
+            <button class="toggles__btn toggles__btn--next" type="button" aria-label="Следующий отзыв."></button>
+            <button class="toggles__btn toggles__btn--last" type="button" aria-label="Следующий отзыв."></button>
+          </div>
         </div>
       </section>
       <section class="rate">
         <div class="rate__wrapper">
           <h2 class="visually-hidden">Тарифы</h2>
           <table class="rate__table">
-            <tr class="rate__head">
-              <td class="rate__base"></td>
-              <td class="rate__standart">
-                <p class="rate__name">Стандарт</p>
-                <p class="rate__price">3,99 USD</p>
-              </td>
-              <td class="rate__unlim"></td>
-            </tr>
+            <thead class="rate__head">
+              <tr>
+                <td class="rate__option">
+                  <p class="visually-hidden">Название опции</p>
+                </td>
+                <td class="rate__base">
+                  <p class="rate__name">База</p>
+                  <p class="rate__price">1,99 USD</p>
+                </td>
+                <td class="rate__standart">
+                  <p class="rate__name">Стандарт</p>
+                  <p class="rate__price">3,99 USD</p>
+                </td>
+                <td class="rate__unlim">
+                  <p class="rate__name">Анлим</p>
+                  <p class="rate__price">9,99 USD</p>
+                </td>
+              </tr>
+            </thead>
             <tbody class="rate__body">
-              <tr>
-                <td class="rate__base"></td>
-                <td class="rate__option">
-                  <p>Розовый фильтр</p>
-                  <span class="rate__noun rate__noun--done"></span>
+              <tr class="rate__filter">
+                <td class="rate__pink">Розовый фильтр</td>
+                <td class="rate__done">
+                  <p class="visually-hidden">Есть</p>
                 </td>
-                <td class="rate__unlim"></td>
+                <td class="rate__done">
+                  <p class="rate__mobile">Розовый фильтр</p>
+                  <p class="visually-hidden">Есть</p>
+                </td>
+                <td class="rate__done">
+                  <p class="visually-hidden">Есть</p>
+                </td>
               </tr>
-              <tr>
-                <td class="rate__base"></td>
-                <td class="rate__option">
-                  <p>Смайлики</p>
-                  <span class="rate__noun rate__noun--done"></span>
+              <tr class="rate__filter">
+                <td class="rate__smiles">Смайлики</td>
+                <td class="rate__none">
+                  <p class="visually-hidden">Нет</p>
                 </td>
-                <td class="rate__unlim"></td>
+                <td class="rate__done">
+                  <p class="rate__mobile">Смайлики</p>
+                  <p class="visually-hidden">Есть</p>
+                </td>
+                <td class="rate__done">
+                  <p class="visually-hidden">Есть</p>
+                </td>
               </tr>
-              <tr>
-                <td class="rate__base"></td>
-                <td class="rate__option">
-                  <p>Комментарии</p>
-                  <span class="rate__noun rate__noun--none"></span>
+              <tr class="rate__comments">
+                <td class="rate__filter">Комментарии</td>
+                <td class="rate__none">
+                  <p class="visually-hidden">Нет</p>
                 </td>
-                <td class="rate__unlim"></td>
+                <td class="rate__none">
+                  <p class="rate__mobile">Комментарии</p>
+                  <p class="visually-hidden">Нет</p>
+                </td>
+                <td class="rate__done">
+                  <p class="visually-hidden">Есть</p>
+                </td>
               </tr>
             </tbody>
           </table>
-          <p class="rate__toggles toggles">
+          <div class="rate__toggles toggles">
             <button class="toggles__btn" type="button" aria-label="Следующий тариф."></button>
             <button class="toggles__btn toggles__btn--current" type="button" aria-label="Тариф Стандарт."></button>
             <button class="toggles__btn" type="button" aria-label="Следующий тариф."></button>
-          </p>
-        </div>
-        <div class="rate__wrapper rate__wrapper--total">
-          <h2 class="visually-hidden">Тарифы</h2>
-          <table class="rate__table rate__table--total">
-            <tr class="rate__head rate__head--total">
-              <td class="rate__option rate__option--total">
-                <p class="visually-hidden">Название опции</p>
-              </td>
-              <td class="rate__base rate__base--total">
-                <p class="rate__name">База</p>
-                <p class="rate__price">1,99 USD</p>
-              </td>
-              <td class="rate__standart rate__standart--total">
-                <p class="rate__name">Стандарт</p>
-                <p class="rate__price">3,99 USD</p>
-              </td>
-              <td class="rate__unlim rate__unlim--total">
-                <p class="rate__name">Анлим</p>
-                <p class="rate__price">9,99 USD</p>
-              </td>
-            </tr>
-            <tbody class="rate__body rate__body--total">
-              <tr>
-                <td class="rate__filter">Розовый фильтр</td>
-                <td class="rate__noun rate__noun--done rate__noun--total">
-                  <p class="visually-hidden">Есть</p>
-                </td>
-                <td class="rate__noun rate__noun--done rate__noun--total">
-                  <p class="visually-hidden">Есть</p>
-                </td>
-                <td class="rate__noun rate__noun--done rate__noun--total">
-                  <p class="visually-hidden">Есть</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="rate__filter">Смайлики</td>
-                <td class="rate__noun rate__noun--none rate__noun--total">
-                  <p class="visually-hidden">Нет</p>
-                </td>
-                <td class="rate__noun rate__noun--done rate__noun--total">
-                  <p class="visually-hidden">Есть</p>
-                </td>
-                <td class="rate__noun rate__noun--done rate__noun--total">
-                  <p class="visually-hidden">Есть</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="rate__filter">Комментарии</td>
-                <td class="rate__noun rate__noun--none rate__noun--total">                    <p class="visually-hidden">Нет</p>
-                  <p class="visually-hidden">Нет</p>
-                </td>
-                <td class="rate__noun rate__noun--none rate__noun--total">                    <p class="visually-hidden">Нет</p>
-                  <p class="visually-hidden">Нет</p>
-                </td>
-                <td class="rate__noun rate__noun--done rate__noun--total">
-                  <p class="visually-hidden">Есть</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          </div>
         </div>
       </section>
       <section class="contacts">

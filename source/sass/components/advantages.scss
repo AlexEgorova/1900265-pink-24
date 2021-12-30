@@ -38,7 +38,7 @@
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 54px;
-    min-width: 588px;
+    max-width: 588px;
     margin-bottom: 47px;
   }
 
@@ -51,25 +51,39 @@
 
 .advantages__list {
   position: relative;
-  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 310px;
-    display: flex;
-    float: right;
-    flex-direction: column;
     min-height: 547px;
-    margin: 0;
+    margin-right: 0;
+    outline-offset: -5px;
+    width: 610px;
+    display: grid;
+    grid-template-columns: 260px 260px;
+    gap: 20px;
+
+    &::before {
+      content: "";
+      background-image: var(--adv3-bgi);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      outline-offset: -5px;
+      width: 260px;
+      height: 547px;
+      margin: 0 auto;
+      grid-column: 1 / 2;
+      grid-row: 1 / 4;
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     padding: 0;
-    float: none;
     min-height: 551px;
     width: 940px;
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    column-gap: 20px;
   }
 }
 
@@ -84,7 +98,7 @@
     background-image: var(--adv3-bgi);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: left 43px;
+    background-position: center 43px;
     width: 157px;
     height: 320px;
     margin: 0 auto;
@@ -95,7 +109,26 @@
   }
 
   @media (min-width: $tablet-width) {
+    outline-offset: -5px;
     margin-bottom: 46px;
+
+    &--joy {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      outline-offset: -5px;
+    }
+
+    &--change {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      outline-offset: -5px;
+    }
+
+    &--friends {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      outline-offset: -5px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -147,6 +180,7 @@
     margin: 0;
     margin-bottom: 24px;
     text-align: start;
+    outline-offset: -5px;
   }
 
   @media (min-width: $desktop-width) {
