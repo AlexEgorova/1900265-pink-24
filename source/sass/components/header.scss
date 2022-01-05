@@ -40,7 +40,11 @@
   line-height: 33px;
   text-align: center;
   margin: 0 auto;
-  padding: 36px 74px 84px 74px;
+  padding-top: 29px;
+
+  &--inner {
+    padding-top: 36px;
+  }
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;

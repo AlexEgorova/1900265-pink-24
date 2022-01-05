@@ -9,7 +9,7 @@
   <body class="body">
     <header class="header">
       <div class="header__wrapper header__wrapper--inner">
-        <nav class="nav">
+        <nav class="nav nav--closed nav--nojs">
           <div class="nav__wrapper">
             <a class="nav__logo" href="index.html">
               <svg class="img nav__logo-modile" width="74" height="23" viewBox="0 0 74 23" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип Пинк.">
@@ -28,9 +28,6 @@
               </svg>
             </a>
             <button class="nav__toggle" type="button">
-              <svg width="50" height="24" viewBox="0 0 50 24" role="img" aria-label="Открыть меню." xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.14 0C.99 0 .84.02.7.07S.43.2.33.3A.88.88 0 0 0 0 1v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 3V1a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 11v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 13v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Zm0 10c-.15 0-.3.02-.44.07s-.27.12-.37.22A.88.88 0 0 0 0 21v2c0 .27.12.52.33.7.22.2.5.3.8.3h47.73c.15 0 .3-.02.44-.07s.27-.12.37-.22A.88.88 0 0 0 50 23v-2a.94.94 0 0 0-.33-.7c-.22-.2-.5-.3-.8-.3H1.13Z" fill="#fff"/>
-              </svg>
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <ul class="nav__list">
@@ -49,7 +46,25 @@
             </ul>
           </div>
         </nav>
-        <h1 class="header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+        <script>
+          var nav = document.querySelector('.nav');
+          var navToggle = document.querySelector('.nav__toggle');
+
+          nav.classList.remove('nav--nojs');
+
+          navToggle.addEventListener('click', function() {
+            if (nav.classList.contains('nav--closed')) {
+              nav.classList.remove('nav--closed');
+              nav.classList.add('nav--opened');
+            } else {
+              nav.classList.add('nav--closed');
+              nav.classList.remove('nav--opened');
+            }
+          });
+        </script>
+
+        <h1 class="header__title header__title--inner">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </header>
     <main class="main">
@@ -125,11 +140,13 @@
                 <legend class="form__title user-contacts__title">Контактная информация</legend>
                 <div class="form__inner user-contacts__phone">
                   <label class="form__label user-contacts__label" for="phone">НОМЕР ТЕЛЕФОНА</label>
-                  <input class="form__input user-contacts__input" type="number" id="phone" placeholder="Номер, пожалуйста">
+                  <input class="form__input user-contacts__input user-contacts__input--phone" type="text" id="phone" placeholder="Номер, пожалуйста">
+                  <span class="user-contacts__icon user-contacts__icon--phone"></span>
                 </div>
                 <div class="form__inner user-contacts__email">
                   <label class="form__label user-contacts__label" for="email">АДРЕС ПОЧТЫ</label>
-                  <input class="form__input user-contacts__input" type="email" id="email" placeholder="Введите почту *" required>
+                  <input class="form__input user-contacts__input user-contacts__input--email" type="email" id="email" placeholder="Введите почту *" required>
+                  <span class="user-contacts__icon user-contacts__icon--email"></span>
                 </div>
               </fieldset>
               <fieldset class="form__group form__group--platforms platforms">
@@ -159,12 +176,14 @@
                 </ul>
               </fieldset>
               <fieldset class="form__group form__group--emotions emotions">
-                <p class="form__title emotions__title">Опишите свои эмоции</p>
-                <textarea class="form__input emotions__input" rows="3" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <legend class="form__title emotions__title">Опишите свои эмоции</legend>
+                <textarea class="form__input emotions__input" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </fieldset>
             </div>
-            <button class="form__button" type="submit" aria-label="Отправить форму">Отправить форму</button>
-            <p class="form__info">* — обязательные поля</p>
+            <div class="form__container">
+              <button class="form__button" type="submit" aria-label="Отправить форму">Отправить форму</button>
+              <p class="form__info">* — обязательные поля</p>
+            </div>
           </form>
         </div>
       </section>
@@ -235,7 +254,7 @@
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Академия.">
             <svg width="27" height="34" viewBox="0 0 27 34" role="img" aria-label="HTML Академия." xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" fill="#D22856"/>
+              <path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"/>
             </svg>
           </a>
         </div>
