@@ -60,22 +60,21 @@ $mobile-width-only: 659px;
   font-family: inherit;
   font-weight: $weight-bold;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 167%;
 }
 
 //button-catalog
 @mixin btn-rounded {
   display: block;
   min-width: 280px;
+  height: 55px;
   margin: 0 auto;
   font-family: inherit;
   font-weight: $weight-bold;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 100%;
   box-sizing: border-box;
   border-radius: 30px;
-  padding-top: 21px;
-  padding-bottom: 21px;
 }
 
 //Titles

@@ -26,14 +26,14 @@
   line-height: 30px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 200px;
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
 
     font-size: 18px;
     line-height: 167%;
-    margin-bottom: 85px;
+    margin-bottom: 294px;
   }
 
   @media (min-width: $desktop-width) {
