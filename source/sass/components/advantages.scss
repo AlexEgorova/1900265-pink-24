@@ -63,15 +63,41 @@
 
     &::before {
       content: "";
-      background-image: var(--advantage3);
+      background-image: var(--advantage-screen-3);
+      background-repeat: no-repeat;
+      background-size: 237px 421px;
+      width: 237px;
+      height: 421px;
+      position: absolute;
+      top: 128px;
+      left: 15px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: var(--advantage-screen-3-x2);
+        background-size: 237px 421px;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: "";
+      background-image: var(--advantage-phone);
       background-repeat: no-repeat;
       background-size: 100%;
-      outline-offset: -5px;
-      width: 260px;
+      background-position: center 65px;
+      width: 268px;
       height: 547px;
       margin: 0 auto;
       grid-column: 1 / 2;
       grid-row: 1 / 4;
+
+      @media (min-resolution: 2dppx) {
+        background-image: var(--advantage-phone-x2);
+        background-size: 268px 547px;
+      }
 
       @media (min-width: $desktop-width) {
         display: none;
@@ -93,20 +119,69 @@
   display: flex;
   flex-direction: column;
 
-  &--friends::after {
-    content: "";
-    background-image: var(--advantage3);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center 43px;
-    width: 157px;
-    height: 320px;
-    margin: 0 auto;
+  &--friends {
+    &::before {
+      content: "";
+      background-image: var(--advantage-screen-3);
+      background-repeat: no-repeat;
+      background-size: 136px 245px;
+      width: 136px;
+      height: 245px;
+      position: absolute;
+      top: 240px;
+      left: 72px;
 
-    @media (min-width: $tablet-width) {
-      display: none;
+      @media (min-resolution: 2dppx) {
+        background-image: var(--advantage-screen-3-x2);
+        background-size: 157px 320px;
+      }
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: block;
+        background-image: var(--advantage-screen-3-x2);
+        background-size: 100%;
+        width: 165px;
+        height: 294px;
+        position: absolute;
+        top: 87px;
+        left: 58px;
+      }
+    }
+
+    &::after {
+      content: "";
+      background-image: var(--advantage-phone);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center 37px;
+      width: 157px;
+      height: 320px;
+      margin: 0 auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: var(--advantage-phone-x2);
+        background-size: 157px 320px;
+      }
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: block;
+        background-image: var(--advantage-phone);
+        background-position: left 43px;
+        width: 186px;
+        height: 382px;
+        margin: 0 auto;
+      }
     }
   }
+
 
   @media (min-width: $tablet-width) {
     outline-offset: -5px;
@@ -132,11 +207,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 59px;
-
-    &--joy::before {
+    &:not(:last-child)::before {
       content: "";
-      background-image: var(--advantage1);
+      background-image: var(--advantage-phone);
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: left 43px;
@@ -145,26 +218,29 @@
       margin: 0 auto;
     }
 
-    &--change::before {
+
+    &--joy::after {
       content: "";
-      background-image: var(--advantage2);
+      background-image: var(--advantage-screen-1);
       background-repeat: no-repeat;
       background-size: 100%;
-      background-position: left 43px;
-      width: 186px;
-      height: 382px;
-      margin: 0 auto;
+      width: 165px;
+      height: 294px;
+      position: absolute;
+      top: 85px;
+      left: 78px;
     }
 
-    &--friends::before {
+    &--change::after {
       content: "";
-      background-image: var(--advantage3);
+      background-image: var(--advantage-screen-2);
       background-repeat: no-repeat;
       background-size: 100%;
-      background-position: left 43px;
-      width: 186px;
-      height: 382px;
-      margin: 0 auto;
+      width: 165px;
+      height: 294px;
+      position: absolute;
+      top: 85px;
+      left: 68px;
     }
   }
 }
@@ -184,10 +260,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 59px;
     font-size: 30px;
     line-height: 100%;
     margin-bottom: 35px;
     text-align: center;
+
+    &--friends {
+      order: 2;
+    }
   }
 }
 
@@ -208,5 +289,9 @@
     text-align: center;
     padding-left: 24px;
     padding-right: 24px;
+
+    &--friends {
+      order: 3;
+    }
   }
 }

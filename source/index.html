@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/png+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="body">
     <header class="header">
@@ -68,28 +72,30 @@
         <section class="intro">
           <h2 class="visually-hidden">Скачать приложение Пинк</h2>
           <div class="intro__wrapper">
-            <p class="intro__sudtitle sudtitle">Взгляните на жизнь иначе!</p>
-            <a class="intro__button intro__button--download" href="#">Скачать приложение</a>
-            <ul class="intro__list">
-              <li class="intro__item">
-                <a class="intro__link intro__link--apple" href="#">
-                  <span class="visually-hidden">Apple</span>
-                </a>
-              </li>
-              <li class="intro__item">
-                <a class="intro__link intro__link--android" href="#">
-                  <span class="visually-hidden">Android</span>
-                </a>
-              </li>
-              <li class="intro__item">
-                <a class="intro__link intro__link--microsoft" href="#">
-                  <span class="visually-hidden">Microsoft</span>
-                </a>
-              </li>
-            </ul>
-            <p class="intro__legend">
-              <small>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
-            </p>
+            <p class="intro__subtitle">Взгляните на жизнь иначе!</p>
+            <div class="intro__downloads">
+              <a class="intro__button intro__button--download" href="#">Скачать приложение</a>
+              <ul class="intro__list">
+                <li class="intro__item">
+                  <a class="intro__link intro__link--apple" href="#">
+                    <span class="visually-hidden">Apple</span>
+                  </a>
+                </li>
+                <li class="intro__item">
+                  <a class="intro__link intro__link--android" href="#">
+                    <span class="visually-hidden">Android</span>
+                  </a>
+                </li>
+                <li class="intro__item">
+                  <a class="intro__link intro__link--microsoft" href="#">
+                    <span class="visually-hidden">Microsoft</span>
+                  </a>
+                </li>
+              </ul>
+              <p class="intro__legend">
+                <small>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
+              </p>
+            </div>
           </div>
         </section>
       </div>
@@ -109,7 +115,7 @@
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
             <li class="advantages__item advantages__item--friends">
-              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <h3 class="advantages__title advantages__title--friends">Заводит новых друзей</h3>
               <p class="advantages__description advantages__description--friends">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
@@ -159,6 +165,10 @@
                   <p class="rate__price">1,99 USD</p>
                 </td>
                 <td class="rate__standart">
+                  <svg class="rate__ribbon rate__ribbon--mobile">
+                    <polygon points="0,25 0,74 74,0 25,0"></polygon>
+                  </svg>
+                  <span class="rate__ribbon-info">Хит</span>
                   <p class="rate__name">Стандарт</p>
                   <p class="rate__price">3,99 USD</p>
                 </td>

@@ -22,12 +22,23 @@ ul {
 }
 
 :root {
-  --advantage1: url("../img/advantage1.png");
+  --advantage1: url("../img/advan-iphone-3.png");
+  --advantage1-x2: url("");
   --advantage2: url("../img/advantage2.png");
-  --advantage3: url("../img/advantage3.png");
+  --advantage2-x2: url("");
+  --advantage-phone: url("../img/advan-iphone-3.png");
+  --advantage-phone-x2: url("../img/advan-iphone-3@2x.png");
+  --advantage-screen-1: url("../img/advan-screen-1.jpg");
+  --advantage-screen-1-x2: url("../img/advan-screen-1@2x.jpg");
+  --advantage-screen-2: url("../img/advan-screen-2.jpg");
+  --advantage-screen-2-x2: url("../img/advan-screen-2@2x.jpg");
+  --advantage-screen-3: url("../img/advan-screen-3.jpg");
+  --advantage-screen-3-x2: url("../img/advan-screen-3@2x.jpg");
   --rev-q: url("../img/quotes.png");
   --btn-left: url("../img/left-arrow.png");
   --btn-right: url("../img/right-arrow.png");
-  --email-form: url("../../img/form-mail-icon.png");
-  --phone-form: url("../../img/form-phone-icon.png");
+  --done: url("../img/yes.svg");
+  --none: url("../img/no.svg");
+  --email-form: url("../img/form-mail-icon.png");
+  --phone-form: url("../img/form-phone-icon.png");
 }
