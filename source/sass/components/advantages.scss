@@ -178,6 +178,10 @@
         width: 186px;
         height: 382px;
         margin: 0 auto;
+
+        @media (min-resolution: 2dppx) {
+          background-image: var(--advantage-phone-x2);
+        }
       }
     }
   }
@@ -216,6 +220,10 @@
       width: 186px;
       height: 382px;
       margin: 0 auto;
+
+      @media (min-resolution: 2dppx) {
+        background-image: var(--advantage-phone-x2);
+      }
     }
 
 
@@ -229,6 +237,10 @@
       position: absolute;
       top: 85px;
       left: 78px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: var(--advantage-screen-1-x2);
+      }
     }
 
     &--change::after {
@@ -241,6 +253,10 @@
       position: absolute;
       top: 85px;
       left: 68px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: var(--advantage-screen-2-x2);
+      }
     }
   }
 }

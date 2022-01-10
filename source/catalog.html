@@ -79,10 +79,6 @@
           <ul class="catalog__list">
             <li class="catalog__item card">
               <div class="card__panorama">
-                <div class="card__photo card__photo--panorama">
-                  <img src="../img/panorama-mobile.jpg" width="320" height="137" alt="Панорама леса с моста">
-                  <span class="card__legend">ПАНОРАМА ДНЯ</span>
-                </div>
                 <div class="card__info card__info--panorama">
                   <div class="card__container">
                     <p class="card__user-name">Анна <span class="card__period">(5 минут назад)</span></p>
@@ -98,7 +94,11 @@
             <li class="catalog__container">
               <ul class="catalog__mode">
                 <li class="catalog__item card">
-                  <img class="card__photo" src="./img/cards/photo-1-mobile.jpg" width="280" srcset="./img/cards/photo-1-mobile@2x.jpg 2x" alt="Белый автомобиль">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/cards/photo-1-desktop.jpg 1x, ./img/cards/photo-1-desktop@2x 2x.jpg">
+                    <source media="(min-width: 660px)" srcset="./img/cards/photo-1-tablet.jpg 1x, ./img/cards/photo-1-tablet@2x 2x.jpg">
+                    <img class="card__photo" src="./img/cards/photo-1-mobile.jpg" srcset="./img/cards/photo-1-mobile@2x.jpg 2x" alt="Белый автомобиль">
+                  </picture>
                   <div class="card__info">
                     <div class="card__container">
                       <p class="card__user-name">Левон <span class="card__period">(5 часов назад)</span></p>
@@ -111,7 +111,11 @@
                   </div>
                 </li>
                 <li class="catalog__item card">
-                  <img class="card__photo" src="./img/photo-2-mobile.jpg" width="280" height="180" alt="Барабанная установка">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/cards/photo-2-desktop.jpg 1x, ./img/cards/photo-2-desktop@2x 2x.jpg">
+                    <source media="(min-width: 660px)" srcset="./img/cards/photo-2-tablet.jpg 1x, ./img/cards/photo-2-tablet@2x 2x.jpg">
+                    <img class="card__photo" src="./img/cards/photo-2-mobile.jpg" srcset="./img/cards/photo-2-mobile@2x.jpg 2x" alt="Барабанная установка">
+                  </picture>
                   <div class="card__info">
                     <div class="card__container">
                       <p class="card__user-name">Антон <span class="card__period">(12 часов назад)</span></p>
@@ -124,7 +128,11 @@
                   </div>
                 </li>
                 <li class="catalog__item card">
-                  <img class="card__photo" src="./img/photo-3-tablet.jpg" width="280" height="180" alt="Небо и небоскреб сквозь атриум">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/cards/photo-3-desktop.jpg 1x, ./img/cards/photo-3-desktop@2x 2x.jpg">
+                    <source media="(min-width: 660px)" srcset="./img/cards/photo-3-tablet.jpg 1x, ./img/cards/photo-3-tablet@2x 2x.jpg">
+                    <img class="card__photo" src="./img/cards/photo-3-mobile.jpg" srcset="./img/cards/photo-3-mobile@2x.jpg 2x" alt="Небо и небоскреб сквозь атриум">
+                  </picture>
                   <div class="card__info">
                     <div class="card__container">
                       <p class="card__user-name">Борис <span class="card__period">(20 часов назад)</span></p>
@@ -137,7 +145,11 @@
                   </div>
                 </li>
                 <li class="catalog__item card">
-                  <img class="card__photo" src="./img/photo-4-tablet.jpg" width="280" height="180" alt="Сельхоз ярмарка">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/cards/photo-4-desktop.jpg 1x, ./img/cards/photo-4-desktop@2x 2x.jpg">
+                    <source media="(min-width: 660px)" srcset="./img/cards/photo-4-tablet.jpg 1x, ./img/cards/photo-4-tablet@2x 2x.jpg">
+                    <img class="card__photo" src="./img/cards/photo-4-mobile.jpg" srcset="./img/cards/photo-4-mobile@2x.jpg 2x" alt="Сельхоз ярмарка">
+                  </picture>
                   <div class="card__info">
                     <div class="card__container">
                       <p class="card__user-name">Сергей <span class="card__period">(25 часов назад)</span></p>
@@ -150,7 +162,11 @@
                   </div>
                 </li>
                 <li class="catalog__item card">
-                  <img class="card__photo" src="./img/photo-5-tablet.jpg" width="280" height="180" alt="Автор сидит на уступе скалы">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/cards/photo-5-desktop.jpg 1x, ./img/cards/photo-5-desktop@2x 2x.jpg">
+                    <source media="(min-width: 660px)" srcset="./img/cards/photo-5-tablet.jpg 1x, ./img/cards/photo-5-tablet@2x 2x.jpg">
+                    <img class="card__photo" src="./img/cards/photo-5-mobile.jpg" srcset="./img/cards/photo-5-mobile@2x.jpg 2x" alt="Автор сидит на уступе скалы">
+                  </picture>
                   <div class="card__info">
                     <div class="card__container">
                       <p class="card__user-name">Максим <span class="card__period">(40 часов назад)</span></p>
@@ -163,7 +179,11 @@
                   </div>
                 </li>
                 <li class="catalog__item card">
-                  <img class="card__photo" src="./img/photo-6-tablet.jpg" width="280" height="180" alt="Крыло самолета с лучами солнца">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./img/cards/photo-6-desktop.jpg 1x, ./img/cards/photo-6-desktop@2x 2x.jpg">
+                    <source media="(min-width: 660px)" srcset="./img/cards/photo-6-tablet.jpg 1x, ./img/cards/photo-6-tablet@2x 2x.jpg">
+                    <img class="card__photo" src="./img/cards/photo-6-mobile.jpg" srcset="./img/cards/photo-6-mobile@2x.jpg 2x" alt="Крыло самолета с лучами солнца">
+                  </picture>
                   <div class="card__info">
                     <div class="card__container">
                       <p class="card__user-name">Надежда <span class="card__period">(45 часов назад)</span></p>
@@ -185,7 +205,7 @@
         <p class="upload__subtitle">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <div class="upload__wrapper">
           <div class="upload__photo">
-            <img src="./img/photo-7-tablet.jpg" width="280" height="374" alt="Зимняя дорога с закатом">
+            <img src="./img/cards/photo-7.jpg" srcset="./img/cards/photo-7@2x.jpg 2x" alt="Зимняя дорога с закатом">
           </div>
           <div class="upload__container">
             <div class="upload__edition edition">

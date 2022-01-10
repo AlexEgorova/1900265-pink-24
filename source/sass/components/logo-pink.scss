@@ -18,6 +18,14 @@
   @media (min-width: $desktop-width) {
     display: block;
 
+    &:hover {
+      fill: $pink;
+    }
+
+    &:active {
+      fill-opacity: 0.3;
+    }
+
     &--icon {
       display: none;
     }
