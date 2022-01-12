@@ -46,76 +46,12 @@
   @media (min-width: $tablet-width) {
     min-height: 40px;
     min-width: 145px;
-    align-items: center;
+    display: flex;
+    align-items: flex-end;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 147px;
-  }
-}
-
-.nav__logo-mobile {
-  fill: $white;
-
-  &:hover {
-    fill: $pink;
-  }
-
-  &:active {
-    fill: $white;
-    fill-opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.nav__logo-tablet {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    fill: $white;
-
-    &:hover {
-      fill: $pink;
-    }
-
-    &:active {
-      fill: $white;
-      fill-opacity: 0.3;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.nav__logo-desktop {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-    fill: $white;
-
-    &:hover {
-      fill: $pink;
-    }
-
-    &:active {
-      fill: $white;
-      fill-opacity: 0.3;
-    }
   }
 }
 

@@ -5,18 +5,40 @@
 }
 
 .card__panorama {
-  position: relative;
+  &::before {
+    content: "Панорама дня";
+    width: 140px;
+    height: 36px;
+    background-color: $pink;
+    font-family: $base-font;
+    font-weight: $weight-bold;
+    font-size: 12px;
+    line-height: 200%;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: -137px;
+    right: 0;
+
+    @media (min-width: $tablet-width) {
+      top: -416px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -430px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
-    align-items: center;
-    margin-top: 228px;
+    margin-top: 0;
+    height: 121px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
+    min-height: 96px;
     margin-right: 0;
-    margin-top: 440px;
   }
 }
 
@@ -63,53 +85,6 @@
 
   @media (min-width: $tablet-width) {
     height: 155px;
-  }
-
-  &--panorama {
-    &::before {
-      content: "";
-      background-image: var(--panorama-mobile);
-      background-repeat: no-repeat;
-      background-size: 320px 137px;
-      width: 320px;
-      height: 137px;
-      position: absolute;
-      top: -137px;
-      left: -20px;
-
-      @media (min-resolution: 2dppx) {
-        background-image: var(--panorama-mobile-2x);
-      }
-
-      @media (min-width: $tablet-width) {
-        background-image: var(--panorama-tablet);
-        background-size: 660px 509px;
-        width: 660px;
-        height: 509px;
-        top: -509px;
-
-        @media (min-resolution: 2dppx) {
-          background-image: var(--panorama-tablet-2x);
-        }
-      }
-
-      @media (min-width: $desktop-width) {
-        background-image: var(--panorama-desktop);
-        background-size: 1200px 506px;
-        width: 1200px;
-        height: 506px;
-        top: -506px;
-        left: -130px;
-
-        @media (min-resolution: 2dppx) {
-          background-image: var(--panorama-desktop-2x);
-        }
-      }
-    }
-
-    @media (min-width: $tablet-width) {
-      height: 121px;
-    }
   }
 }
 
@@ -178,6 +153,7 @@
   height: 14px;
   cursor: pointer;
   margin-right: 18px;
+  vertical-align: middle;
 
   @media (min-width: $tablet-width) {
     order: 2;
@@ -190,6 +166,7 @@
   text-align: right;
   text-transform: uppercase;
   color: $pink;
+  vertical-align: middle;
 
   &--panorama {
     @media (min-width: $tablet-width) {

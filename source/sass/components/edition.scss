@@ -138,7 +138,6 @@
 .edition__toggle {
   position: absolute;
   top: -6px;
-  right: 33px;
   width: 14px;
   height: 14px;
   background-color: $white;
@@ -146,6 +145,11 @@
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
+  z-index: 1;
+
+  &--crop {
+    right: 33px;
+  }
 
   &--fill {
     @media (min-width: $tablet-width) {
@@ -157,5 +161,9 @@
     @media (min-width: $tablet-width) {
       left: 96px;
     }
+  }
+
+  &:hover {
+    background-color: $pink;
   }
 }

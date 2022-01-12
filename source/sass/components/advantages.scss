@@ -63,7 +63,7 @@
 
     &::before {
       content: "";
-      background-image: var(--advantage-screen-3);
+      background-image: url("../img/advan-screen-3.jpg");
       background-repeat: no-repeat;
       background-size: 237px 421px;
       width: 237px;
@@ -73,7 +73,7 @@
       left: 15px;
 
       @media (min-resolution: 2dppx) {
-        background-image: var(--advantage-screen-3-x2);
+        background-image: url("../img/advan-screen-3@2x.jpg");
         background-size: 237px 421px;
       }
 
@@ -84,7 +84,7 @@
 
     &::after {
       content: "";
-      background-image: var(--advantage-phone);
+      background-image: url("../img/advan-iphone-3.png");
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: center 65px;
@@ -95,7 +95,7 @@
       grid-row: 1 / 4;
 
       @media (min-resolution: 2dppx) {
-        background-image: var(--advantage-phone-x2);
+        background-image: url("../img/advan-iphone-3@2x.png");
         background-size: 268px 547px;
       }
 
@@ -122,7 +122,7 @@
   &--friends {
     &::before {
       content: "";
-      background-image: var(--advantage-screen-3);
+      background-image: url("../img/advan-screen-3.jpg");
       background-repeat: no-repeat;
       background-size: 136px 245px;
       width: 136px;
@@ -132,7 +132,7 @@
       left: 72px;
 
       @media (min-resolution: 2dppx) {
-        background-image: var(--advantage-screen-3-x2);
+        background-image: url("../img/advan-screen-3@2x.jpg");
         background-size: 157px 320px;
       }
 
@@ -142,19 +142,23 @@
 
       @media (min-width: $desktop-width) {
         display: block;
-        background-image: var(--advantage-screen-3-x2);
         background-size: 100%;
         width: 165px;
         height: 294px;
         position: absolute;
         top: 87px;
         left: 58px;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/advan-screen-3@2x.jpg");
+          background-size: 165px 294px;
+        }
       }
     }
 
     &::after {
       content: "";
-      background-image: var(--advantage-phone);
+      background-image: url("../img/advan-iphone-3.png");
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: center 37px;
@@ -163,7 +167,7 @@
       margin: 0 auto;
 
       @media (min-resolution: 2dppx) {
-        background-image: var(--advantage-phone-x2);
+        background-image: url("../img/advan-iphone-3@2x.png");
         background-size: 157px 320px;
       }
 
@@ -173,14 +177,13 @@
 
       @media (min-width: $desktop-width) {
         display: block;
-        background-image: var(--advantage-phone);
         background-position: left 43px;
         width: 186px;
         height: 382px;
         margin: 0 auto;
 
         @media (min-resolution: 2dppx) {
-          background-image: var(--advantage-phone-x2);
+          background-image: url("../img/advan-iphone-3@2x.png");
         }
       }
     }
@@ -213,7 +216,7 @@
   @media (min-width: $desktop-width) {
     &:not(:last-child)::before {
       content: "";
-      background-image: var(--advantage-phone);
+      background-image: url("../img/advan-iphone-3.png");
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: left 43px;
@@ -222,14 +225,13 @@
       margin: 0 auto;
 
       @media (min-resolution: 2dppx) {
-        background-image: var(--advantage-phone-x2);
+        background-image: url("../img/advan-iphone-3@2x.png");
       }
     }
 
-
     &--joy::after {
       content: "";
-      background-image: var(--advantage-screen-1);
+      background-image: url("../img/advan-screen-1.jpg");
       background-repeat: no-repeat;
       background-size: 100%;
       width: 165px;
@@ -239,13 +241,13 @@
       left: 78px;
 
       @media (min-resolution: 2dppx) {
-        background-image: var(--advantage-screen-1-x2);
+        background-image: url("../img/advan-screen-1@2x.jpg");
       }
     }
 
     &--change::after {
       content: "";
-      background-image: var(--advantage-screen-2);
+      background-image: url("../img/advan-screen-2.jpg");
       background-repeat: no-repeat;
       background-size: 100%;
       width: 165px;
@@ -255,7 +257,7 @@
       left: 68px;
 
       @media (min-resolution: 2dppx) {
-        background-image: var(--advantage-screen-2-x2);
+        background-image: url("../img/advan-screen-2@2x.jpg");
       }
     }
   }
