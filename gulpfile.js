@@ -95,6 +95,12 @@ const copy = (done) => {
   done();
 }
 
+const copyMain = (done) => {
+  return gulp.src(['*.ico', '*.webmanifest'])
+    .pipe(gulp.dest('build'))
+  done();
+}
+
 //Clean
 
 const clean = () => {
@@ -127,7 +133,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(scripts));
-  gulp.watch('source/*.html', gulp.series(html, reload)); //.on('change', browser.reload)
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 //Build
@@ -135,6 +141,7 @@ const watcher = () => {
 export const build = gulp.series(
   clean,
   copy,
+  copyMain,
   optimizeImages,
   gulp.parallel(
     styles,
@@ -151,6 +158,7 @@ export const build = gulp.series(
 export default gulp.series(
   clean,
   copy,
+  copyMain,
   copyImages,
   gulp.parallel(
     styles,
