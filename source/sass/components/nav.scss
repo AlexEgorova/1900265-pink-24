@@ -12,40 +12,44 @@
 .nav__wrapper {
   @include mobile-max-width;
   position: relative;
-
   display: flex;
   justify-content: space-between;
   min-height: 66px;
   padding: 20px;
+  padding-left: 0;
+  padding-right: 0;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
-
     min-height: 110px;
+    padding: 25px 10px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-max-width;
-
+    min-height: 110px;
     margin: 0 auto;
+    padding: 0;
     align-items: center;
     max-width: 960px;
   }
 }
 
 .nav__logo {
-  height: 23px;
-  width: 74px;
+  min-height: 23px;
+  min-width: 74px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     min-height: 40px;
     min-width: 145px;
+    margin-left: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 147px;
+    margin-left: 17px;
   }
 }
 
@@ -61,7 +65,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    top: 20px;
+    top: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,25 +78,27 @@
     content: "";
     position: absolute;
     top: 21px;
-    left: 20px;
+    left: 40px;
     width: 50px;
     height: 3px;
     background-color: $white;
-    box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+    box-shadow:
+      0 10px 0 0 $white,
+      0 20px 0 0 $white;
   }
 
   .nav__toggle:hover::before {
     background-color: $pink;
     box-shadow:
-      0 8px 0 0 $pink,
-      0 16px 0 0 $pink;
+      0 10px 0 0 $pink,
+      0 20px 0 0 $pink;
   }
 
   .nav__toggle:active::before {
     background-color: fade($pink, 30%);
     box-shadow:
-      0 8px 0 0 fade($pink, 30%),
-      0 16px 0 0 fade($pink, 30%);
+      0 10px 0 0 fade($pink, 30%),
+      0 20px 0 0 fade($pink, 30%);
   }
 
   .nav__item {
@@ -109,12 +115,12 @@
     left: 0;
     right: 0;
     z-index: 10;
-    min-height: 400px;
+    min-height: 320px;
     background-color: $dark;
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 430px;
+    min-height: 360px;
     background-color: $dark;
   }
 }
@@ -133,7 +139,7 @@
     content: "";
     position: absolute;
     top: 30px;
-    left: 20px;
+    left: 60px;
     width: 30px;
     height: 3px;
     background-color: $white;
@@ -177,10 +183,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 10px;
     position: relative;
     top: 0;
     right: 0;
-    width: 670px;
+    min-width: 670px;
     min-height: 110px;
     display: flex;
     flex-direction: row;
@@ -196,6 +203,7 @@
 .nav__item {
   box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   width: 280px;
+  min-height: 63px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -216,8 +224,8 @@
 .nav__link {
   position: relative;
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: $weight-bold;
   font-size: 18px;
   line-height: 178%;

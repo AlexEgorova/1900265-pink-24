@@ -1,8 +1,4 @@
 .logo-pink__nav {
-  &:first-child {
-    margin-right: 12px;
-  }
-
   &:hover {
     fill: $pink;
   }
@@ -18,6 +14,7 @@
     @media (min-width: $tablet-width) {
       display: block;
       fill: $white;
+      margin-right: 8px;
     }
 
     @media (min-width: $desktop-width) {
@@ -75,6 +72,12 @@
 
   &--desktop {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:first-child {
+      margin-right: 8px;
+    }
   }
 
   @media (min-width: $desktop-width) {

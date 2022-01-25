@@ -4,8 +4,6 @@
 }
 
 .catalog__wrapper {
-  // @include mobile-max-width;
-  // min-width: 280px;
   padding-top: 54px;
   margin: 0 auto;
   position: relative;
@@ -19,7 +17,7 @@
   @include mobile-max-width;
   font-weight: $weight-normal;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 214%;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 60px;

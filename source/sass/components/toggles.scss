@@ -12,7 +12,7 @@
   height: 12px;
   border-radius: 50%;
   border: none;
-  margin-right: 19px;
+  margin-right: 12px;
   background-color: $dark;
   opacity: 0.3;
 
@@ -45,8 +45,8 @@
       width: 22px;
       height: 41px;
       position: absolute;
-      top: 50%;
-      left: -800px;
+      top: 140px;
+      left: -855px;
     }
 
     &--current,
@@ -64,8 +64,8 @@
       width: 22px;
       height: 41px;
       position: absolute;
-      top: 50%;
-      right: 0;
+      top: 140px;
+      right: -5px;
     }
   }
 }

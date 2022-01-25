@@ -106,6 +106,8 @@
 .form__title {
   @include form-title;
   @include mobile-max-width;
+  font-size: 14px;
+  line-height: 129%;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -115,6 +117,7 @@
   @media (min-width: $tablet-width) {
     top: 0;
     margin-bottom: 0;
+    line-height: 214%;
   }
 }
 

@@ -8,7 +8,8 @@
     background-image: $bg-hand-tablet;
     background-repeat: no-repeat;
     background-size: 660px 545px;
-    background-position: bottom;
+    background-position-x: -13px;
+    background-position-y: 75px;
     position: relative;
 
     @media (min-resolution: 2dppx) {
@@ -23,8 +24,8 @@
       width: 195px;
       height: 346px;
       position: absolute;
-      top: 166px;
-      right: 75px;
+      top: 130px;
+      right: 65px;
 
       @media (min-resolution: 2dppx) {
         background-image: $bg-screen2x-tablet;
@@ -38,6 +39,7 @@
     background-image: $bg-hand-desktop;
     background-size: auto 645px;
     background-position: bottom;
+    background-position-x: 165px;
 
     &::after {
       content: "";
@@ -48,7 +50,7 @@
       height: 408px;
       position: absolute;
       top: 162px;
-      right: 201px;
+      right: 125px;
 
       @media (min-resolution: 2dppx) {
         background-image: $bg-screen2x-desktop;
@@ -58,9 +60,8 @@
 }
 
 .intro__wrapper {
-  min-height: 667px;
+  min-height: 550px;
   margin: 0 auto;
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -69,10 +70,12 @@
   @media (min-width: $tablet-width) {
     min-height: 619px;
     width: 300px;
-    padding-top: 74px;
-    padding-bottom: 119px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 90px;
     position: relative;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,11 +88,12 @@
   font-weight: $weight-light;
   font-size: 24px;
   line-height: 120%;
-  min-height: 396px;
+  min-height: 370px;
   background-image: $bg-hand-mobile;
   background-repeat: no-repeat;
   background-size: 320px 286px;
-  background-position: bottom left;
+  background-position-x: -20px;
+  background-position-y: bottom;
   margin-bottom: 0;
   position: relative;
 
@@ -99,15 +103,19 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 300px;
+    min-width: 300px;
     min-height: 127px;
     font-size: 40px;
     align-items: start;
     background-image: none;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
+    line-height: 68px;
+    padding-left: 35px;
   }
 
   &::after {
@@ -118,8 +126,8 @@
     width: 111px;
     height: 197px;
     position: absolute;
-    top: 142px;
-    left: 104px;
+    top: 116px;
+    left: 83px;
 
     @media (min-resolution: 2dppx) {
       background-image: $bg-screen2x-mobile;
@@ -136,23 +144,24 @@
   width: 100%;
   background-color: $blue-dark;
   padding-top: 28px;
-  padding-bottom: 38px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
     width: 300px;
+    padding-top: 35px;
+    padding-bottom: 0;
   }
 }
 
 .intro__button {
+  @include mobile-max-width;
   @include btn-rounded;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding: 15px;
   color: $white;
   border: 3px solid $white;
   border-radius: 30px;
-  margin-bottom: 32px;
-  width: 280px;
+  margin-bottom: 34px;
 
   &:hover {
     color: $pink;
@@ -166,6 +175,11 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
+    margin-bottom: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
   }
 }
 
@@ -176,10 +190,23 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+    min-width: 300px;
+  }
 }
 
-.intro__item:not(:last-child) {
-  margin-right: 35px;
+.intro__item {
+  padding-left: 5px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .intro__link {
@@ -211,7 +238,7 @@
 .intro__legend {
   @include mobile-max-width;
   margin: 0 auto;
-  margin-top: 28px;
+  margin-top: 20px;
   font-weight: $weight-light;
   font-size: 14px;
   line-height: 171%;
@@ -219,5 +246,10 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 133%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    min-width: 300px;
   }
 }

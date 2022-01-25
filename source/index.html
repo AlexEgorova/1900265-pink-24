@@ -55,7 +55,22 @@
           </div>
         </nav>
 
-        <script src="./js/script.js"></script>
+        <script src="./js/script.js">
+          var nav = document.querySelector('.nav');
+          var navToggle = document.querySelector('.nav__toggle');
+
+          nav.classList.remove('nav--nojs');
+
+          navToggle.addEventListener('click', function() {
+            if (nav.classList.contains('nav--closed')) {
+              nav.classList.remove('nav--closed');
+              nav.classList.add('nav--opened');
+            } else {
+              nav.classList.add('nav--closed');
+              nav.classList.remove('nav--opened');
+            }
+          });
+        </script>
 
         <section class="intro">
           <h2 class="visually-hidden">Скачать приложение Пинк</h2>
@@ -80,9 +95,7 @@
                   </a>
                 </li>
               </ul>
-              <p class="intro__legend">
-                <small>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</small>
-              </p>
+              <p class="intro__legend">Доступно для iPhone, iPad, Android, Windows&nbsp;Phone, OS X, Windows 8</p>
             </div>
           </div>
         </section>
@@ -92,15 +105,19 @@
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
-          <p class="advantages__subtitle">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
+          <!-- <p class="advantages__subtitle">Устали от серости мегаполиса? Нам есть, что вам предложить!</p> -->
+          <div class="advantages__subtitle">
+            <p class="advantages__subtext advantages__subtext--top">Устали от серости мегаполиса?</p>
+            <p class="advantages__subtext advantages__subtext--bottom">Нам есть, что вам предложить!</p>
+          </div>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--joy">
-              <h3 class="advantages__title">Поднимает настроение</h3>
-              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <h3 class="advantages__title advantages__title--joy">Поднимает настроение</h3>
+              <p class="advantages__description advantages__description--joy">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item advantages__item--change">
               <h3 class="advantages__title">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p class="advantages__description advantages__description--change">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
               </li>
             <li class="advantages__item advantages__item--friends">
               <h3 class="advantages__title advantages__title--friends">Заводит новых друзей</h3>
@@ -113,7 +130,7 @@
         <div class="effect__wrapper">
           <h2 class="visually-hidden">Исследование британских ученых</h2>
           <div class="effect__description">
-            <h2 class="effect__subtitle">Эффект на 24 часа!</h2>
+            <h2 class="effect__subtitle">Эффект на&nbsp;24&nbsp;часа!</h2>
             <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="effect__info" href="#">Узнать больше об исследовании</a>
           </div>
@@ -153,8 +170,8 @@
                   <p class="rate__price">1,99 USD</p>
                 </td>
                 <td class="rate__standart">
-                  <svg class="rate__ribbon rate__ribbon--mobile">
-                    <polygon points="0,25 0,74 74,0 25,0"></polygon>
+                  <svg width="74" height="74" class="rate__ribbon rate__ribbon--mobile">
+                    <polygon points="0,33 0,74 74,0 33,0"></polygon>
                   </svg>
                   <span class="rate__ribbon-info">Хит</span>
                   <p class="rate__name">Стандарт</p>
@@ -220,22 +237,26 @@
           <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <p class="contacts__subtitle">Звоните:</p>
+              <p class="contacts__subtitle contacts__subtitle--phone">Звоните:</p>
               <a class="contacts__text contacts__text--phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </li>
             <li class="contacts__item">
-              <p class="contacts__subtitle">Пишите:</p>
+              <p class="contacts__subtitle contacts__subtitle--email">Пишите:</p>
               <a class="contacts__text contacts__text--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li class="contacts__item contacts__item--adress">
-              <p class="contacts__subtitle">Приезжайте в гости:</p>
-              <a class="contacts__text contacts__text--adress">ул. Большая Конюшенная, 19/8</a>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1640545661682!5m2!1sru!2sru"
-              width="320"
-              height="200"
-              style="border:0;" allowfullscreen="" loading="lazy"
-              title="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург">
-              </iframe>
+              <div class="contacts__container">
+                <p class="contacts__subtitle contacts__subtitle--adress">Приезжайте в гости:</p>
+                <a class="contacts__text contacts__text--adress">ул. Большая Конюшенная, 19/8</a>
+              </div>
+              <div class="contacts__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1640545661682!5m2!1sru!2sru"
+                width="320"
+                height="200"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                title="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург">
+                </iframe>
+              </div>
             </li>
           </ul>
         </div>
