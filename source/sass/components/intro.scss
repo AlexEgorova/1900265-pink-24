@@ -8,7 +8,7 @@
     background-image: $bg-hand-tablet;
     background-repeat: no-repeat;
     background-size: 660px 545px;
-    background-position-x: -13px;
+    background-position-x: -22px;
     background-position-y: 75px;
     position: relative;
 
@@ -24,8 +24,8 @@
       width: 195px;
       height: 346px;
       position: absolute;
-      top: 130px;
-      right: 65px;
+      top: 128px;
+      right: 72px;
 
       @media (min-resolution: 2dppx) {
         background-image: $bg-screen2x-tablet;
@@ -39,7 +39,7 @@
     background-image: $bg-hand-desktop;
     background-size: auto 645px;
     background-position: bottom;
-    background-position-x: 165px;
+    background-position-x: 155px;
 
     &::after {
       content: "";
@@ -50,7 +50,7 @@
       height: 408px;
       position: absolute;
       top: 162px;
-      right: 125px;
+      right: 135px;
 
       @media (min-resolution: 2dppx) {
         background-image: $bg-screen2x-desktop;
@@ -71,15 +71,14 @@
     min-height: 619px;
     width: 300px;
     padding-top: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-bottom: 90px;
     position: relative;
-    margin-left: 10px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 478px;
+    padding-left: 10px;
   }
 }
 
@@ -148,9 +147,9 @@
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
-    width: 300px;
+    max-width: 300px;
     padding-top: 35px;
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 }
 
@@ -179,6 +178,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 21px;
     margin-bottom: 70px;
   }
 }
@@ -236,7 +236,8 @@
 }
 
 .intro__legend {
-  @include mobile-max-width;
+  display: inline-block;
+  max-width: 280px;
   margin: 0 auto;
   margin-top: 20px;
   font-weight: $weight-light;
@@ -244,8 +245,10 @@
   line-height: 171%;
 
   @media (min-width: $tablet-width) {
+    max-width: 300px;
     font-size: 18px;
     line-height: 133%;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

@@ -22,6 +22,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+    margin-right: 13px;
   }
 }
 
@@ -41,6 +42,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    margin-left: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
+    margin-right: 5px;
   }
 }

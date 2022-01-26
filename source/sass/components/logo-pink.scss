@@ -14,7 +14,7 @@
     @media (min-width: $tablet-width) {
       display: block;
       fill: $white;
-      margin-right: 8px;
+      margin-right: 10px;
     }
 
     @media (min-width: $desktop-width) {
@@ -36,6 +36,7 @@
     @media (min-width: $desktop-width) {
       display: block;
       fill: $white;
+      margin: 0;
     }
   }
 }
@@ -77,6 +78,7 @@
   @media (min-width: $tablet-width) {
     &:first-child {
       margin-right: 8px;
+      margin-left: 0;
     }
   }
 
