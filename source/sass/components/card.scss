@@ -1,7 +1,11 @@
 .card {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   background-color: $light;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -10,12 +14,12 @@
 
 .card__panorama {
   display: block;
-  width: 310px;
+  width: 320px;
   margin: 0 -20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 650px;
+    width: 660px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +40,7 @@
     color: $white;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 5px;
+    padding-top: 8px;
     position: absolute;
     top: 0;
     right: 20px;
@@ -54,6 +58,8 @@
 
 .card__photo {
   display: block;
+  padding: 0;
+  margin: 0;
 
   &:not(:first-of-type) {
     width: 280px;
@@ -86,19 +92,25 @@
 }
 
 .card__info {
-  margin-top: 30px;
+  margin-top: 19px;
   padding-left: 17px;
   padding-bottom: 26px;
-  padding-right: 17px;
+  padding-right: 0;
   display: grid;
   grid-template-columns: 31px 1fr;
   grid-template-rows: 24px 1fr 13px;
 
   @media (min-width: $tablet-width) {
-    height: 155px;
+    height: 126px;
+    margin-top: 24px;
     padding-left: 30px;
     padding-right: 30px;
     grid-template-columns: 1fr 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 135px;
+    padding-bottom: 33px;
   }
 
   &--panorama {
@@ -108,7 +120,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      height: 96px;
+      height: 70px;
+      padding-bottom: 20px;
     }
   }
 }
@@ -140,9 +153,21 @@
   line-height: 171%;
   color: $dark;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 11px;
+  padding-right: 12px;
   grid-column: 1 / 3;
   grid-row: 2 / 3;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--panorama {
+      padding: 0;
+      grid-column: 1 / 4;
+    }
+  }
 }
 
 .card__button {
@@ -162,12 +187,14 @@
     margin-right: 0;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+    margin-left: 18px;
   }
 
   &--panorama {
     @media (min-width: $tablet-width) {
       grid-column: 3 / 4;
       grid-row: 1 / 2;
+      margin-left: 0;
     }
   }
 }

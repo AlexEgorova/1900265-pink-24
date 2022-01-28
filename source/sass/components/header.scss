@@ -47,8 +47,7 @@
 
     @media (min-width: $desktop-width) {
       @include desktop-max-width;
-
-      min-height: 394px;
+      min-height: 395px;
     }
   }
 }
@@ -62,8 +61,12 @@
   margin: 0 auto;
   padding-top: 29px;
 
-  &--inner {
-    padding-top: 36px;
+  &--catalog {
+    padding-top: 25px;
+  }
+
+  &--form {
+    padding-top: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -71,10 +74,28 @@
     font-size: 50px;
     line-height: 68px;
     padding: 81px 151px 143px 151px;
+
+    &--catalog {
+      padding: 70px 0;
+    }
+
+    &--form {
+      padding: 70px 0;
+      padding-bottom: 50px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-max-width;
     padding: 81px 110px 104px 104px;
+
+    &--catalog {
+      padding: 60px 250px 60px 270px;
+    }
+
+    &--form {
+      padding: 60px;
+      padding-left: 80px;
+    }
   }
 }

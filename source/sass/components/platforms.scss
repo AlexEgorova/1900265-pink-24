@@ -2,10 +2,27 @@
   background: $light;
   margin: 0 auto;
   padding: 0;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
+    @include tablet-max-width;
     background: $white;
     margin: 0;
+    padding-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 437px;
+    padding-bottom: 50px;
+  }
+}
+
+.platforms__title {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 368px;
   }
 }
 
@@ -15,17 +32,28 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-left: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 75px;
+    margin-bottom: 60px;
   }
 }
 
 .platforms__item {
-  margin-bottom: 47px;
+  margin-bottom: 45px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 39px;
+    margin-bottom: 47px;
 
     &:last-child {
       margin-bottom: 0;
     }
   }
+}
+
+.platforms__control {
+  padding-left: 60px;
 }

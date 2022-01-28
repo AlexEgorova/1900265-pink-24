@@ -2,33 +2,43 @@
   @include mobile-max-width;
 
   margin: 0 auto;
-  margin-bottom: 44px;
+  margin-bottom: 40px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
+    padding: 35px 60px 42px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-max-width;
-    padding: 0;
+    padding: 35px 55px;
+  }
+}
+
+.emotions__title {
+  padding-top: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 260px;
   }
 }
 
 .emotions__input {
   margin-top: 22px;
+  padding-top: 8px;
+  padding-left: 20px;
   width: 276px;
   height: 197px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    margin-bottom: 53px;
     width: 496px;
     height: 189px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
     width: 816px;
     height: 124px;
   }

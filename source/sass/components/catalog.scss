@@ -4,12 +4,12 @@
 }
 
 .catalog__wrapper {
-  padding-top: 54px;
+  padding-top: 43px;
   margin: 0 auto;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 100px;
+    padding-top: 90px;
   }
 }
 
@@ -20,18 +20,22 @@
   line-height: 214%;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+  padding: 0 15px;
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
     font-size: 18px;
     line-height: 167%;
-    margin-bottom: 85px;
+    margin-bottom: 78px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-max-width;
-    margin-bottom: 97px;
+    margin-bottom: 90px;
+    padding-left: 170px;
+    padding-right: 160px;
   }
 }
 
@@ -47,15 +51,18 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
-    margin: 0 auto;
+    padding-left: 10px;
     display: grid;
     grid-template-columns: 300px 300px;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 25px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-max-width;
     grid-template-columns: 300px 300px 300px;
+    column-gap: 20px;
+    row-gap: 50px;
   }
 }
 

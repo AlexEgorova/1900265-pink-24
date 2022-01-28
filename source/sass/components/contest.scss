@@ -3,36 +3,53 @@
 
   @media (min-width: $tablet-width) {
     @include tablet-max-width;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-max-width;
+    margin-bottom: 10px;
   }
 }
 
 .contest__subtitle {
-  @include mobile-max-width;
-
   background-color: $white;
   color: $dark;
   font-weight: $weight-normal;
   font-size: 14px;
   line-height: 214%;
   text-align: center;
-  padding-top: 54px;
-  margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    @include tablet-max-width;
+  &--mobile {
+    @include mobile-max-width;
+    padding-top: 45px;
+    padding-bottom: 35px;
+    margin: 0 auto;
 
-    font-size: 18px;
-    line-height: 167%;
-    margin-bottom: 82px;
-    padding-top: 100px;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    @include desktop-max-width;
-    margin-bottom: 70px;
+  &--total {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      @include tablet-max-width;
+      display: inline-block;
+      font-size: 18px;
+      line-height: 167%;
+      margin-bottom: 45px;
+      padding: 30px;
+      padding-top: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include desktop-max-width;
+      margin-bottom: 37px;
+      padding-top: 72px;
+      padding-right: 72px;
+      padding-left: 90px;
+    }
   }
 }

@@ -53,14 +53,15 @@
             </ul>
           </div>
         </nav>
-        <h1 class="header__title header__title--inner">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="header__title header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
     </header>
     <main class="main">
       <section class="contest">
         <div class="contest__wrapper">
           <h2  class="visually-hidden">Заполнение формы</h2>
-          <p class="contest__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="contest__subtitle contest__subtitle--mobile">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="contest__subtitle contest__subtitle--total">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
           <form class="form" action="https://echo.htmlacademy.ru" method="get">
             <div class="form__wrapper">
               <fieldset class="form__group form__group--user-data user-data">
@@ -79,7 +80,7 @@
                 </div>
               </fieldset>
               <fieldset class="form__group form__group--progress progress">
-                <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+                <legend class="form__title progress__title">Ваши безбашенные достижения в путешествии</legend>
                 <ul class="progress__list">
                   <li class="progress__item">
                     <label class="control">
@@ -139,24 +140,24 @@
                 </div>
               </fieldset>
               <fieldset class="form__group form__group--platforms platforms">
-                <legend class="form__title">С каким приложением путешествовали?</legend>
+                <legend class="form__title platforms__title">С каким приложением путешествовали?</legend>
                 <ul class="platforms__list">
                   <li class="platforms__item">
-                    <label class="control">
+                    <label class="control platforms__control">
                       <input class="visually-hidden control__input" type="radio" name="platforms" value="iOS" id="iOS" checked>
                       <span class="control__mark control__mark--platforms"></span>
                       <span class="control__label">Pink для iOS</span>
                     </label>
                   </li>
                   <li class="platforms__item">
-                    <label class="control">
+                    <label class="control platforms__control">
                       <input class="visually-hidden control__input" type="radio" name="platforms" value="Android" id="Android">
                       <span class="control__mark control__mark--platforms"></span>
                       <span class="control__label">Pink на Android</span>
                     </label>
                   </li>
                   <li class="platforms__item">
-                    <label class="control">
+                    <label class="control platforms__control">
                       <input class="visually-hidden control__input" type="radio" name="platforms" value="Windows" id="Windows">
                       <span class="control__mark control__mark--platforms"></span>
                       <span class="control__label">Windows Phone</span>
@@ -171,7 +172,8 @@
             </div>
             <div class="form__container">
               <button class="form__button" type="submit" aria-label="Отправить форму">Отправить форму</button>
-              <p class="form__info">* — обязательные поля</p>
+              <p class="form__info form__info--short">* — обязательные поля</p>
+              <p class="form__info form__info--desktop">* — обязательные для заполнения поля</p>
             </div>
           </form>
         </div>
@@ -238,7 +240,7 @@
       </div>
     </footer>
     <!-- modal-failure -->
-    <section class="modal">
+    <section class="modal modal-closed">
       <div class="modal__failure">
         <div class="modal__content">
           <h3 class="modal__title">Что-то пошло не так!</h3>
@@ -250,7 +252,7 @@
       </div>
     </section>
     <!-- modal-success -->
-    <section class="modal">
+    <section class="modal modal-closed">
       <div class="modal__success">
         <div class="modal__content">
           <h3 class="modal__title">Ваша заявка отправлена</h3>

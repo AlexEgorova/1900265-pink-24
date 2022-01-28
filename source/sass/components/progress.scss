@@ -6,14 +6,20 @@
   @media (min-width: $tablet-width) {
     background: $white;
     margin: 0;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
     @include desktop-max-width;
+    height: 246px;
     margin: 0;
-    padding: 0;
-    height: 228px;
+    padding-top: 43px;
+    padding-bottom: 40px;
   }
+}
+
+.progress__title {
+  max-width: 436px;
 }
 
 .progress__list {
@@ -21,6 +27,8 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    @include tablet-max-width;
+    padding-left: 60px;
     margin: 0;
   }
 
@@ -29,20 +37,20 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 230px;
+    height: 240px;
   }
 }
 
 .progress__item {
   margin-top: 44px;
-  margin-bottom: 47px;
+  margin-bottom: 52px;
 
   &:last-child {
     margin-bottom: 44px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 54px;
+    margin-top: 42px;
 
     &:last-child {
       margin-bottom: 50px;
@@ -51,11 +59,11 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-bottom: 47px;
+    margin-bottom: 52px;
     width: 260px;
 
     &:not(:nth-of-type(n+5)) {
-      margin-right: 57px;
+      margin-right: 45px;
     }
   }
 }
