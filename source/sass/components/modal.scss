@@ -1,17 +1,23 @@
 .modal {
+  position: fixed;
+  top: 50%;
+  left: 22%;
+
   background-color: $white;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   border-radius: 1px;
-  padding-top: 44px;
-  width: 320px;
+  max-width: 320px;
+  min-height: 289px;
 
   @media (min-width: $tablet-width) {
-    width: 460px;
+    left: 27%;
+    max-width: 460px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 780px;
-    height: 377px;
+    left: 20%;
+    max-width: 780px;
+    min-height: 377px;
   }
 }
 
@@ -19,10 +25,15 @@
   display: none;
 }
 
+.modal-opened {
+  display: block;
+}
+
 .modal__failure {
+  padding: 22px;
   height: 289px;
-  padding-right: 22px;
-  padding-left: 22px;
+  padding-top: 25px;
+  padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     height: 363px;
@@ -41,6 +52,33 @@
 
 .modal__content {
   background-color: $white;
+  padding: 22px;
+
+  &--failure {
+    padding-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 15px;
+      padding-bottom: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 106px;
+    }
+  }
+
+  &--success {
+    padding-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 10px 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 10px 160px;
+      padding-bottom: 20px;
+    }
+  }
 }
 
 .modal__title {
@@ -49,6 +87,18 @@
   line-height: 133%;
   color: $black;
   text-align: center;
+
+  &--success {
+    margin-bottom: 25px;
+  }
+
+  &--failure {
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -62,6 +112,20 @@
   color: $dark;
   text-align: center;
 
+  &--failure {
+    @media (min-width: $tablet-width) {
+      padding-left: 58px;
+      padding-right: 58px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 163px;
+      padding-right: 163px;
+      margin-top: 30px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 133%;
@@ -69,8 +133,15 @@
 }
 
 .modal__close {
-  margin: 0 auto;
-  padding-top: 50px;
+  &--failure {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  &--success {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
 }
 
 .modal__button {
@@ -84,5 +155,15 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 300px;
+  }
+
+  &--success {
+    @media (min-width: $desktop-width) {
+      min-width: 456px;
+    }
   }
 }

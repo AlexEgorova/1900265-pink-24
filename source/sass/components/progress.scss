@@ -19,7 +19,12 @@
 }
 
 .progress__title {
+  @include mobile-max-width;
   max-width: 436px;
+
+  @media (min-width: $tablet-width) {
+    @include tablet-max-width;
+  }
 }
 
 .progress__list {

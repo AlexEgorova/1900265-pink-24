@@ -19,10 +19,12 @@
 }
 
 .platforms__title {
-  padding: 0;
+  @include mobile-max-width;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
-    max-width: 368px;
+    width: 368px;
+    padding-top: 0;
   }
 }
 
@@ -55,5 +57,5 @@
 }
 
 .platforms__control {
-  padding-left: 60px;
+  padding-left: 70px;
 }

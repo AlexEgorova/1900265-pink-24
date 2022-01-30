@@ -1,8 +1,10 @@
 .form fieldset {
   border: none;
 
-  &:not(:first-child) {
-    border: 2px solid $grey;
+  @media (min-width: $tablet-width) {
+    &:not(:first-child) {
+      border: 2px solid $grey;
+    }
   }
 
   @media (min-width: $desktop-width) {
