@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 75px;
+    margin-left: 70px;
     margin-bottom: 60px;
   }
 }
@@ -58,4 +58,8 @@
 
 .platforms__control {
   padding-left: 70px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+  }
 }

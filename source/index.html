@@ -59,20 +59,20 @@
           <div class="intro__wrapper">
             <p class="intro__subtitle">Взгляните на жизнь иначе!</p>
             <div class="intro__downloads">
-              <a class="intro__button intro__button--download" href="#">Скачать приложение</a>
+              <a class="intro__button intro__button--download" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
               <ul class="intro__list">
                 <li class="intro__item">
-                  <a class="intro__link intro__link--apple" href="#">
+                  <a class="intro__link intro__link--apple" href="https://www.apple.com">
                     <span class="visually-hidden">Apple</span>
                   </a>
                 </li>
                 <li class="intro__item">
-                  <a class="intro__link intro__link--android" href="#">
+                  <a class="intro__link intro__link--android" href="https://play.google.com/store">
                     <span class="visually-hidden">Android</span>
                   </a>
                 </li>
                 <li class="intro__item">
-                  <a class="intro__link intro__link--microsoft" href="#">
+                  <a class="intro__link intro__link--microsoft" href="https://www.microsoft.com/ru-ru/">
                     <span class="visually-hidden">Microsoft</span>
                   </a>
                 </li>
@@ -147,8 +147,8 @@
                   <p class="visually-hidden">Название опции</p>
                 </td>
                 <td class="rate__base">
-                  <p class="rate__name">База</p>
-                  <p class="rate__price">1,99 USD</p>
+                  <p class="rate__name rate__name--base">База</p>
+                  <p class="rate__price rate__price--base">1,99 USD</p>
                 </td>
                 <td class="rate__standart">
                   <svg width="74" height="74" class="rate__ribbon rate__ribbon--mobile">
@@ -159,48 +159,48 @@
                   <p class="rate__price">3,99 USD</p>
                 </td>
                 <td class="rate__unlim">
-                  <p class="rate__name">Анлим</p>
-                  <p class="rate__price">9,99 USD</p>
+                  <p class="rate__name rate__name--unlim">Анлим</p>
+                  <p class="rate__price rate__price--unlim">9,99 USD</p>
                 </td>
               </tr>
             </thead>
             <tbody class="rate__body">
               <tr class="rate__filter">
                 <td class="rate__pink">Розовый фильтр</td>
-                <td class="rate__done">
+                <td class="rate__done rate__done--pink-base">
                   <p class="visually-hidden">Есть</p>
                 </td>
-                <td class="rate__done">
+                <td class="rate__done rate__done--pink-standart">
                   <p class="rate__mobile">Розовый фильтр</p>
                   <p class="visually-hidden">Есть</p>
                 </td>
-                <td class="rate__done">
+                <td class="rate__done rate__done--pink-unlim">
                   <p class="visually-hidden">Есть</p>
                 </td>
               </tr>
               <tr class="rate__filter">
                 <td class="rate__smiles">Смайлики</td>
-                <td class="rate__none">
+                <td class="rate__none rate__none--smile-base">
                   <p class="visually-hidden">Нет</p>
                 </td>
-                <td class="rate__done">
+                <td class="rate__done rate__done--smile-standart">
                   <p class="rate__mobile">Смайлики</p>
                   <p class="visually-hidden">Есть</p>
                 </td>
-                <td class="rate__done">
+                <td class="rate__done rate__done--smile-unlim">
                   <p class="visually-hidden">Есть</p>
                 </td>
               </tr>
               <tr class="rate__filter">
                 <td class="rate__comments">Комментарии</td>
-                <td class="rate__none">
+                <td class="rate__none rate__none--kom-base">
                   <p class="visually-hidden">Нет</p>
                 </td>
-                <td class="rate__none">
+                <td class="rate__none rate__none--kom-standart">
                   <p class="rate__mobile">Комментарии</p>
                   <p class="visually-hidden">Нет</p>
                 </td>
-                <td class="rate__done">
+                <td class="rate__done rate__done--kom-unlim">
                   <p class="visually-hidden">Есть</p>
                 </td>
               </tr>
@@ -230,14 +230,17 @@
               <a class="contacts__text contacts__text--adress">ул. Большая Конюшенная, 19/8</a>
             </li>
           </ul>
-          <div class="contacts__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1640545661682!5m2!1sru!2sru"
-            width="320"
-            height="200"
-            style="border:0;" allowfullscreen="" loading="lazy"
-            title="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург">
-            </iframe>
-          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div class="map__wrapper">
+          <h2 class="visually-hidden">Карта с расположением офиса</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1640545661682!5m2!1sru!2sru"
+          width="320"
+          height="200"
+          style="border:0;" allowfullscreen="" loading="lazy"
+          title="Офис компании по адресу улица Большая Конюшенная, дом 19/8, Санкт-Петербург">
+          </iframe>
         </div>
       </section>
     </main>

@@ -41,13 +41,21 @@
 
 .rate__table {
   margin: 0 auto;
-  width: 280px;
+  // width: 280px;
   margin-bottom: 32px;
 
-  td:nth-child(1),
-  td:nth-child(2),
-  td:nth-child(4) {
+  // td:nth-child(1),
+  // td:nth-child(2),
+  // td:nth-child(4) {
+  //   display: none;
+  // }
+
+  td:nth-child(1) {
     display: none;
+  }
+
+  td:nth-child(3) {
+    width: 276px;
   }
 
   @media (min-width: $tablet-width) {
@@ -68,7 +76,7 @@
 
   @media (min-width: $desktop-width) {
     width: 940px;
-    padding-left: 10px;
+    padding-left: 5px;
   }
 }
 
@@ -135,8 +143,18 @@
   margin: 0;
   padding: 0;
 
+  &--base,
+  &--unlim {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 10px;
+
+    &--base,
+    &--unlim {
+      display: block;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -152,6 +170,18 @@
   margin: 0;
   margin-bottom: 7px;
   padding: 0;
+
+  &--base,
+  &--unlim {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--base,
+    &--unlim {
+      display: inline-block;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
@@ -210,8 +240,22 @@
   width: 31px;
   height: 21px;
 
+  &--pink-base,
+  &--pink-unlim,
+  &--smile-unlim,
+  &--kom-unlim {
+    background-image: none;
+  }
+
   @media (min-width: $tablet-width) {
     background-position-x: 65px;
+
+    &--pink-base,
+    &--pink-unlim,
+    &--smile-unlim,
+    &--kom-unlim {
+      background-image: var(--done);
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -227,8 +271,18 @@
   width: 27px;
   height: 27px;
 
+  &--smile-base,
+  &--kom-base {
+    background-image: none;
+  }
+
   @media (min-width: $tablet-width) {
     background-position-x: 68px;
+
+    &--smile-base,
+    &--kom-base {
+      background-image: var(--none);
+    }
   }
 
   @media (min-width: $desktop-width) {

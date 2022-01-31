@@ -18,12 +18,17 @@
 
   &--platforms {
     width: 37px;
+    height: 37px;
     border-radius: 50%;
   }
 }
 
 .control__input {
   &:hover ~ .control__mark {
+    border: 2px solid $dark;
+  }
+
+  &:focus ~ .control__mark{
     border: 2px solid $dark;
   }
 
@@ -44,8 +49,8 @@
 
   &[type="radio"]:checked + .control__mark::before {
     position: absolute;
-    top: 8px;
-    left: 10px;
+    top: 9px;
+    left: 9px;
     width: 15px;
     height: 15px;
     border-radius: 50%;

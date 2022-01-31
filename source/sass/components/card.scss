@@ -14,12 +14,12 @@
 
 .card__panorama {
   display: block;
-  width: 320px;
-  margin: 0 -20px;
+  width: 300px;
+  margin: 0 -10px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
+    width: 640px;
   }
 
   @media (min-width: $desktop-width) {
