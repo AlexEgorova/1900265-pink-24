@@ -175,7 +175,7 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/advan-screen-3@2x.jpg");
-        background-size: 157px 320px;
+        // background-size: 135px 240px;
       }
 
       @media (min-width: $tablet-width) {
@@ -339,7 +339,7 @@
     margin-bottom: 15px;
 
     &--joy {
-      margin-top: 25px;
+      margin-top: 30px;
     }
   }
 

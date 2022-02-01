@@ -1,21 +1,22 @@
 .map {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
-  padding: 0;
-  min-height: 200px;
+}
+
+.map__wrapper {
   position: relative;
 
   &::after {
     content: "";
-    width: 300px;
-    height: 120px;
-    background-image: $bg-map-mobile;
+    width: 320px;
+    height: 123px;
+    background-image: url("../img/bg-img/triangle-map-mobile.png");
     background-repeat: no-repeat;
     background-size: auto;
     position: absolute;
     top: -90px;
-    left: 0;
-    right: 0;
-    z-index: 0;
+    left: -20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -35,15 +36,16 @@
       width: 1200px;
       background-image: url("../img/bg-img/triangle-map-desktop.png");
       top: -30px;
-      z-index: 2;
+      left: -130px;
     }
   }
 }
 
 .map iframe {
-  display: block;
   margin: 0 auto;
-  padding: 0;
+  margin-left: -20px;
+  width: 100%;
+  height: 200px;
 
   @media (min-width: $tablet-width) {
     width: 660px;
@@ -51,6 +53,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    margin-left: -130px;
     width: 1200px;
     height: 490px;
   }
