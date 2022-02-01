@@ -1,65 +1,57 @@
-.map__wrapper {
-  @include mobile-max-width;
-  margin: auto;
+.map {
+  margin: 0 auto;
+  padding: 0;
   min-height: 200px;
   position: relative;
 
   &::after {
     content: "";
-    width: 320px;
+    width: 300px;
     height: 120px;
     background-image: $bg-map-mobile;
     background-repeat: no-repeat;
-    background-size: 95vw 120px;
+    background-size: auto;
     position: absolute;
     top: -90px;
-    left: -10px;
+    left: 0;
+    right: 0;
     z-index: 0;
   }
 
   @media (min-width: $tablet-width) {
-    @include tablet-max-width;
     min-height: 374px;
 
     &::after {
       width: 660px;
       background-image: url("../img/bg-img/triangle-map-tablet.png");
-      background-size: 660px 123px;
       top: -55px;
-      left: -40px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    @include desktop-max-width;
-    height: 502px;
+    min-height: 502px;
 
     &::after {
       width: 1200px;
       background-image: url("../img/bg-img/triangle-map-desktop.png");
-      background-size: 1200px 123px;
       top: -30px;
-      left: -130px;
       z-index: 2;
     }
   }
 }
 
 .map iframe {
-  // display: block;
-  width: 95vw;
-  height: 200px;
+  display: block;
   margin: 0 auto;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     width: 660px;
     height: 374px;
-    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
-    height: 500px;
-    margin-left: -130px;
+    height: 490px;
   }
 }

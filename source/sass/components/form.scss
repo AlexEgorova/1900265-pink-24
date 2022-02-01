@@ -152,6 +152,10 @@
     border: 2px solid $dark;
   }
 
+  &:focus {
+    border: 2px solid $pink;
+  }
+
   &:active {
     border: 2px solid $pink;
   }

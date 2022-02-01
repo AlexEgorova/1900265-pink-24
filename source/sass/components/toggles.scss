@@ -9,9 +9,10 @@
 
 .toggles__btn {
   width: 6px;
-  height: 12px;
+  height: 6px;
   border-radius: 50%;
   border: none;
+  padding: 0;
   margin-right: 12px;
   background-color: $dark;
   opacity: 0.3;
